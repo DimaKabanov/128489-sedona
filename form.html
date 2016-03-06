@@ -46,13 +46,23 @@
             <fieldset class="recall__form-name">
               <legend>Представьтесь, пожалуйста:</legend>
               <label for="name">Имя</label>
-              <input type="text" id="name" name="name">
+              <input type="text" id="name" name="name" placeholder="Петр" required>
 
               <label for="surname">Фамилия</label>
-              <input type="text" id="surname" name="name">
+              <input type="text" id="surname" name="name" placeholder="Иванов" required>
 
               <label for="patronymic">Отчество</label>
-              <input type="text" id="patronymic" name="name">
+              <input type="text" id="patronymic" name="name" placeholder="Александрович" required>
+            </fieldset>
+
+            <!-- form-contacts -->
+            <fieldset class="recall__form-contacts">
+              <legend>Контактаня информация:</legend>
+              <label for="phone">Контактный телефон:</label>
+              <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+
+              <label for="email">Электронная почта:</label>
+              <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
             </fieldset>
 
           </form>
