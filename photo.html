@@ -11,19 +11,25 @@
     <!-- header -->
     <header class="header">
       <nav class="main-nav  main-nav--closed">
-        <span class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</span>
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="#">Главная</a></li>
-          <li class="main-nav__item  main-nav__item--active"><a href="#">Фото и видео</a></li>
-          <li class="main-nav__item"><a href="#">Форма отзыва</a></li>
-          <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link  main-nav__item--active">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
         </ul>
-
-        <!-- logo -->
-        <div class="main-nav__logo">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Sedona">
-        </div>
       </nav>
+
+      <!-- logo -->
+      <div class="logo">
+        <a href="#" class="logo__link">
+          <img class="logo__picture" src="http://placehold.it/150x100" width="150" height="100" alt="Sedona">
+        </a>
+      </div>
+
+      <button class="main-nav__toggle  main-nav__toggle--closed">
+        Открыть меню
+      </button>
+
     </header>
 
 
