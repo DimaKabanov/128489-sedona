@@ -6,129 +6,125 @@
   </head>
   <body>
 
-  <!-- header -->
-  <header class="header">
-    <nav class="main-nav">
-      <span class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</span>
-      <div class="main-nav__wrapper  main-nav__wrapper--closed">
+
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <nav class="main-nav  main-nav--closed">
+        <span class="main-nav__toggle  main-nav__toggle--closed">Открыть меню</span>
         <ul class="main-nav__items">
           <li class="main-nav__item"><a href="#">Главная</a></li>
           <li class="main-nav__item"><a href="#">Фото и видео</a></li>
           <li class="main-nav__item  main-nav__item--active"><a href="#">Форма отзыва</a></li>
           <li class="main-nav__item"><a href="#">HTML Academy</a></li>
         </ul>
-      </div>
 
-      <div class="main-nav__logo">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Sedona">
-      </div>
-    </nav>
-  </header>
+        <!-- logo -->
+        <div class="main-nav__logo">
+          <img src="http://placehold.it/150x100" width="150" height="100" alt="Sedona">
+        </div>
+      </nav>
+    </header>
 
 
-  <!-- main-content -->
-  <div class="main-content">
+    <!-- main-content -->
     <div class="main-content__main-img">
       <img src="http://placehold.it/150x100" width="150" height="100" alt="Sedona">
     </div>
 
     <!-- recall -->
     <div class="recall">
-      <div class="recall__wrapper">
-        <div class="recall__title">Оставьте свой отзыв</div>
-        <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <div class="recall__title">Оставьте свой отзыв</div>
+      <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
-        <!-- form -->
-        <div class="recall__form">
-          <form action="#" method="post">
+      <!-- form -->
+      <div class="recall__form">
+        <form action="#" method="post">
 
-            <!-- form-name -->
-            <fieldset class="recall__form-name">
-              <legend>Представьтесь, пожалуйста:</legend>
-              <label for="name">Имя</label>
-              <input type="text" id="name" name="name" placeholder="Петр" required>
+          <!-- form-name -->
+          <fieldset class="recall__form-name">
+            <legend>Представьтесь, пожалуйста:</legend>
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Петр" required>
 
-              <label for="surname">Фамилия</label>
-              <input type="text" id="surname" name="name" placeholder="Иванов" required>
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname" name="name" placeholder="Иванов" required>
 
-              <label for="patronymic">Отчество</label>
-              <input type="text" id="patronymic" name="name" placeholder="Александрович" required>
-            </fieldset>
+            <label for="patronymic">Отчество</label>
+            <input type="text" id="patronymic" name="name" placeholder="Александрович" required>
+          </fieldset>
 
-            <!-- form-contacts -->
-            <fieldset class="recall__form-contacts">
-              <legend>Контактаня информация:</legend>
-              <label for="phone">Контактный телефон:</label>
-              <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+          <!-- form-contacts -->
+          <fieldset class="recall__form-contacts">
+            <legend>Контактаня информация:</legend>
+            <label for="phone">Контактный телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
 
-              <label for="email">Электронная почта:</label>
-              <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
-            </fieldset>
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+          </fieldset>
 
-            <!-- form-effect -->
-            <fieldset class="recall__form-effect">
-              <legend>Ваше общее впечатление:</legend>
-              <input type="radio" id="positive" name="radio">
-              <label for="positive">Скорее положительное</label>
+          <!-- form-effect -->
+          <fieldset class="recall__form-effect">
+            <legend>Ваше общее впечатление:</legend>
+            <input type="radio" id="positive" name="radio">
+            <label for="positive">Скорее положительное</label>
 
-              <input type="radio" id="negative" name="radio">
-              <label for="negative">Скорее отрицательное</label>
+            <input type="radio" id="negative" name="radio">
+            <label for="negative">Скорее отрицательное</label>
 
-              <input type="radio" id="difficult" name="radio">
-              <label for="difficult">Затрудняюсь ответить</label>
-            </fieldset>
+            <input type="radio" id="difficult" name="radio">
+            <label for="difficult">Затрудняюсь ответить</label>
+          </fieldset>
 
-            <!-- form-attraction -->
-            <fieldset class="recall__form-attraction">
-              <legend>Посещенные достопримечательности:</legend>
-              <input type="checkbox" id="devil's-bridge" name="devil's-bridge">
-              <label for="devil's-bridge">Мост дьявола</label>
+          <!-- form-attraction -->
+          <fieldset class="recall__form-attraction">
+            <legend>Посещенные достопримечательности:</legend>
+            <input type="checkbox" id="devil's-bridge" name="devil's-bridge">
+            <label for="devil's-bridge">Мост дьявола</label>
 
-              <input type="checkbox" id="slide-park" name="slide-park">
-              <label for="slide-park">Слайд-парк</label>
+            <input type="checkbox" id="slide-park" name="slide-park">
+            <label for="slide-park">Слайд-парк</label>
 
-              <input type="checkbox" id="mount-bell" name="mount-bell">
-              <label for="mount-bell">Гора-колокол</label>
+            <input type="checkbox" id="mount-bell" name="mount-bell">
+            <label for="mount-bell">Гора-колокол</label>
 
-              <input type="checkbox" id="red-rocks" name="bred-rocks">
-              <label for="red-rocks">Крассные скалы</label>
-            </fieldset>
+            <input type="checkbox" id="red-rocks" name="red-rocks">
+            <label for="red-rocks">Крассные скалы</label>
+          </fieldset>
 
-            <!-- form-emotions -->
-            <label for="emotions">Опишите свои эмоции</label>
-            <textarea id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+          <!-- form-emotions -->
+          <label for="emotions">Опишите свои эмоции</label>
+          <textarea id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
 
-            <!-- form-submit -->
-            <input type="submit" class="recall__form-submit  btn" value="Отправить отзыв">
+          <!-- form-submit -->
+          <input type="submit" class="recall__form-submit  btn" value="Отправить отзыв">
 
-          </form>
-        </div>
+        </form>
       </div>
     </div>
-  </div>
 
     <!-- footer -->
     <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__title">#Visitsedona</div>
+      <div class="footer__title">#Visitsedona</div>
 
-        <!-- footer-social -->
-        <div class="footer__social">
-          <div class="social-links">
-            <a href="#" class="social-link  social-link--tv">Мы в Твиттере</a>
-            <a href="#" class="social-link  social-link--fb">Мы в Фейсбуке</a>
-            <a href="#" class="social-link  social-link--yt">Мы на YouTube</a>
-          </div>
+      <!-- footer-social -->
+      <div class="footer__social">
+        <div class="social-links">
+          <a href="#" class="social-link  social-link--tv">Мы в Твиттере</a>
+          <a href="#" class="social-link  social-link--fb">Мы в Фейсбуке</a>
+          <a href="#" class="social-link  social-link--yt">Мы на YouTube</a>
         </div>
-
-        <!-- copyright -->
-        <div class="footer__copyright">
-          <span>Разработанно</span>
-          <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy"></a>
-        </div>
-
       </div>
+
+      <!-- copyright -->
+      <div class="footer__copyright">
+        <span>Разработанно</span>
+        <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy"></a>
+      </div>
+
     </footer>
+  </div>
 
 
   </body>
