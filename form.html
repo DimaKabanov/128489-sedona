@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - форма отзыва</title>
+  </head>
+  <body>
+
+
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <nav class="main-nav  main-nav--closed">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Главная</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">Фото и видео</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link  main-nav__item--active">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="#" class="main-nav__link">HTML Academy</a></li>
+        </ul>
+      </nav>
+
+      <!-- logo -->
+      <div class="logo">
+        <a href="#" class="logo__link">
+          <img class="logo__picture" src="http://placehold.it/150x100" width="150" height="100" alt="Sedona">
+        </a>
+      </div>
+
+      <button class="main-nav__toggle  main-nav__toggle--closed">
+        Открыть меню
+      </button>
+
+    </header>
+
+
+    <!-- main-content -->
+    <div class="intro">
+      <img class="intro__picture" src="http://placehold.it/150x100" width="150" height="100" alt="Sedona">
+    </div>
+
+    <!-- recall -->
+    <section class="recall">
+      <header class="recall__header">
+        <h1 class="recall__title">Оставьте свой отзыв</h1>
+        <p class="recall__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </header>
+
+      <!-- form -->
+      <div class="recall__form">
+        <form action="#" method="post">
+
+          <!-- form-name -->
+          <fieldset class="recall__form-name">
+            <legend class="recall__name-title">Представьтесь, пожалуйста:</legend>
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Петр" required>
+
+            <label for="surname">Фамилия</label>
+            <input type="text" id="surname" name="name" placeholder="Иванов" required>
+
+            <label for="patronymic">Отчество</label>
+            <input type="text" id="patronymic" name="name" placeholder="Александрович" required>
+          </fieldset>
+
+          <!-- form-contacts -->
+          <fieldset class="recall__form-contacts">
+            <legend class="recall__contacts-title">Контактаня информация:</legend>
+            <label for="phone">Контактный телефон:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+
+            <label for="email">Электронная почта:</label>
+            <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+          </fieldset>
+
+          <!-- form-effect -->
+          <fieldset class="recall__form-effect">
+            <legend class="recall__effect-title">Ваше общее впечатление:</legend>
+            <input type="radio" id="positive" name="radio">
+            <label for="positive">Скорее положительное</label>
+
+            <input type="radio" id="negative" name="radio">
+            <label for="negative">Скорее отрицательное</label>
+
+            <input type="radio" id="difficult" name="radio">
+            <label for="difficult">Затрудняюсь ответить</label>
+          </fieldset>
+
+          <!-- form-attraction -->
+          <fieldset class="recall__form-attraction">
+            <legend class="recall__attraction-title">Посещенные достопримечательности:</legend>
+            <input type="checkbox" id="devil's-bridge" name="devil's-bridge">
+            <label for="devil's-bridge">Мост дьявола</label>
+
+            <input type="checkbox" id="slide-park" name="slide-park">
+            <label for="slide-park">Слайд-парк</label>
+
+            <input type="checkbox" id="mount-bell" name="mount-bell">
+            <label for="mount-bell">Гора-колокол</label>
+
+            <input type="checkbox" id="red-rocks" name="red-rocks">
+            <label for="red-rocks">Крассные скалы</label>
+          </fieldset>
+
+          <!-- form-emotions -->
+          <label for="emotions">Опишите свои эмоции</label>
+          <textarea id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+
+          <!-- form-submit -->
+          <button class="btn  btn--submit" value="Отправить отзыв"></button>
+
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer__hashtag">#Visitsedona</div>
+
+      <!-- footer-social -->
+      <div class="social-links">
+        <a href="#" class="social-link  social-link--tv">Мы в Твиттере</a>
+        <a href="#" class="social-link  social-link--fb">Мы в Фейсбуке</a>
+        <a href="#" class="social-link  social-link--yt">Мы на YouTube</a>
+      </div>
+
+      <!-- copyright -->
+      <div class="footer__copyright">
+        <span class="footer__copyright-name">Разработанно</span>
+        <a href="#" class="footer__copyright-link">
+          <img class="footer__copyright-picture" src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
+        </a>
+      </div>
+
+    </footer>
+  </div>
+
+
+  </body>
+</html>
