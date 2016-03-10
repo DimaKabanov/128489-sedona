@@ -1,29 +1,29 @@
-@import "normalize.scss";
-@import "fonts.scss";
+@import "global/normalize";
+@import "global/fonts";
 @import "variables.scss";
 @import "mixins.scss";
 
 @import "global/body.scss";
 @import "global/wrapper.scss";
-@import "global/header.scss";
-@import "global/main-nav.scss";
-@import "global/logo.scss";
-@import "global/intro.scss";
+@import "blocks/header";
+@import "blocks/main-nav";
+@import "blocks/logo";
+@import "blocks/intro";
 
-@import "index/features.scss";
-@import "index/feature.scss";
-@import "index/feature-picture.scss";
-@import "index/hotel-search.scss";
-@import "index/map.scss";
+@import "blocks/features";
+@import "blocks/feature";
+@import "blocks/feature-picture";
+@import "blocks/hotel-search";
+@import "blocks/map";
 
-@import "global/footer.scss";
-@import "global/social-links.scss";
-@import "global/social-link.scss";
+@import "blocks/footer";
+@import "blocks/social-links";
+@import "blocks/social-link";
 
-@import "form/recall.scss";
+@import "blocks/recall";
 
-@import "photo/media.scss";
-@import "photo/media-picture.scss";
-@import "photo/controls.scss";
+@import "blocks/media";
+@import "blocks/media-picture";
+@import "blocks/controls";
 
 @import "global/btn.scss";
