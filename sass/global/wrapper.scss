@@ -1,5 +1,15 @@
+@import "../variables.scss";
+
 .wrapper {
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+
+  @media #{$tablet-width} {
+    width: 670px;
+  }
+
+  @media #{$desktop-width} {
+    width: 1060px;
+  }
 }
