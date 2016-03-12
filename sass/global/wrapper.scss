@@ -4,6 +4,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 0 20px;
+  outline: 1px solid #0000AA;
 
   @media #{$tablet-width} {
     width: 670px;

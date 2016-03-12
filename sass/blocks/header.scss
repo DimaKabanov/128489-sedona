@@ -1,4 +1,15 @@
+@import "../variables.scss";
+
 .header {
-  border: 2px solid #0000AA;
-  padding: 5px;
+  min-height: 280px;
+
+  outline: 1px solid #0000AA;
+
+  @media #{$tablet-width} {
+    position: relative;
+
+    min-height: 56px;
+  }
 }
+
+
