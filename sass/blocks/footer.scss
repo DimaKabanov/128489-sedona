@@ -1,4 +1,18 @@
+@import "../variables.scss";
+
 .footer {
   outline: 1px solid #64003c;
-  padding: 5px;
+}
+
+@media #{$tablet-width} {
+  .footer {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+}
+
+@media #{$desktop-width} {
+  .footer {
+    margin: 0;
+  }
 }
