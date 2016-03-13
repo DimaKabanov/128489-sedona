@@ -7,10 +7,11 @@
   outline: 1px solid #0000AA;
 
   @media #{$tablet-width} {
-    width: 670px;
+    width: 768px;
+    padding: 0;
   }
 
   @media #{$desktop-width} {
-    width: 1060px;
+    width: 1200px;
   }
 }

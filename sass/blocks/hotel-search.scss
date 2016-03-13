@@ -1,4 +1,11 @@
+@import "../variables.scss";
+
 .hotel-search {
-  border: 2px solid #ff0043;
-  padding: 5px;
+  outline: 1px solid #ff0043;
+  width: 280px;
+  margin: 0 auto;
+
+  @media #{$tablet-width} {
+    width: 460px;
+  }
 }

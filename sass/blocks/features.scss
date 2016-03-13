@@ -1,4 +1,18 @@
+@import "../variables.scss";
+
 .features {
-  border: 2px solid #64003c;
-  padding: 5px;
+  outline: 1px solid #64003c;
+  //padding: 5px;
+
+  @media #{$tablet-width} {
+    width: auto;
+
+    &__header {
+      width: 628px;
+      min-height: 150px;
+      margin: 0 auto;
+
+      text-align: center;
+    }
+  }
 }

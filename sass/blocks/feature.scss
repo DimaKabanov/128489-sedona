@@ -1,5 +1,16 @@
+@import "../variables.scss";
+
 .feature {
-  border: 2px solid #ffff00;
-  margin: 5px 0;
-  padding: 5px;
+  outline: 1px solid red;
+  //margin: 5px 0;
+  //padding: 5px;
+
+  @media #{$tablet-width} {
+    width: 256px;
+    min-height: 256px;
+  }
+
+  @media #{$desktop-width} {
+    width: 400px;
+  }
 }

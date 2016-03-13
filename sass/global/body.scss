@@ -4,3 +4,15 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
+
+.clearfix {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+.to-left {float: left;}
+.to-right {float: right;}
