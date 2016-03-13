@@ -1,3 +1,34 @@
+@import "../variables.scss";
+
 .media-picture {
+  //width: 100%;
+  margin: 0;
   outline: 1px solid #ffff00;
+
+  img {
+    width: 280px;
+    height: 280px;
+  }
+
+  @media #{$tablet-width} {
+    img {
+      width: 324px;
+      height: 267px;
+    }
+
+    img:first-child {
+      width: 100%
+    }
+  }
+
+  @media #{$desktop-width} {
+    img {
+      width: 400px;
+      height: 267px;
+    }
+
+    img:first-child {
+      width: 100%
+    }
+  }
 }

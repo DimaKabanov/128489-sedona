@@ -1,13 +1,13 @@
 @import "../variables.scss";
 
 .wrapper {
-  width: 320px;
+  width: 280px;
   margin: 0 auto;
   padding: 0 20px;
-  outline: 1px solid #0000AA;
+  outline: 1px solid green;
 
   @media #{$tablet-width} {
-    width: 768px;
+    width: 648px;
     padding: 0;
   }
 
