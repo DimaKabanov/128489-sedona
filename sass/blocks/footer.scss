@@ -2,17 +2,27 @@
 
 .footer {
   outline: 1px solid #64003c;
-}
 
-@media #{$tablet-width} {
-  .footer {
+
+  @media #{$tablet-width} {
     margin-left: 60px;
     margin-right: 60px;
-  }
-}
 
-@media #{$desktop-width} {
-  .footer {
+    &__hashtag {
+      margin-right: 112px;
+    }
+  }
+
+  @media #{$desktop-width} {
     margin: 0;
+
+    &__hashtag {
+      margin-left: 132px;
+      margin-right: 256px;
+    }
+
+    &__copyright {
+      margin-right: 44px;
+    }
   }
 }
