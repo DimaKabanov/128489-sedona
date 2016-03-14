@@ -1,9 +1,8 @@
 .feature {
   outline: 1px solid red;
-  //margin: 5px 0;
-  //padding: 5px;
 
   @media #{$tablet-width} {
+    float: left;
     width: 256px;
     min-height: 256px;
   }

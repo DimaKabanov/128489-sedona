@@ -2,6 +2,7 @@
   outline: 1px solid #0000ee;
 
   @media #{$tablet-width} {
+    float: right;
     margin: 0;
     width: 512px;
     height: 256px;
