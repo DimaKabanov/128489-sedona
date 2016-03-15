@@ -1,4 +1,31 @@
 .footer {
-  border: 2px solid #64003c;
-  padding: 5px;
+  outline: 1px solid #64003c;
+
+
+  @media #{$tablet-width} {
+    margin-left: 60px;
+    margin-right: 60px;
+
+    &__hashtag {
+      float: left;
+      margin-right: 112px;
+    }
+
+    &__copyright {
+      float: right;
+    }
+  }
+
+  @media #{$desktop-width} {
+    margin: 0;
+
+    &__hashtag {
+      margin-left: 132px;
+      margin-right: 256px;
+    }
+
+    &__copyright {
+      margin-right: 44px;
+    }
+  }
 }

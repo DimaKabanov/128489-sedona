@@ -1,3 +1,29 @@
 .main-nav {
-  border: 2px solid #00AA00;
+  width: 320px;
+  min-height: 56px;
+  margin: 0 auto;
+
+  outline: 1px solid #00AA00;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  @media #{$tablet-width} {
+    width: 100%;
+
+    &__item {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
 }
+
+

@@ -1,4 +1,31 @@
 .recall {
-  border: 2px solid #ff0043;
-  padding: 5px;
+  outline: 1px solid #ff0043;
+
+  @media #{$tablet-width} {
+    &__header {
+      width: 628px;
+      min-height: 150px;
+      margin: 0 auto;
+
+      text-align: center;
+    }
+
+    &__form {
+     margin-left: 60px;
+     margin-right: 60px;
+    }
+
+    &__form-emotions {
+      width: 100%;
+      min-height: 160px;
+      resize: none;
+    }
+  }
+
+  @media #{$desktop-width} {
+    &__form {
+      margin-left: 120px;
+      margin-right: 120px;
+    }
+  }
 }
