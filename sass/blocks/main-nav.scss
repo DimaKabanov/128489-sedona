@@ -44,11 +44,13 @@
     top: 17px;
   }
 
+
   @media #{$mobile-width} {
     &--closed {
       display: none;
     }
   }
+
 
   @media #{$tablet-width} {
     width: auto;
@@ -58,6 +60,7 @@
     &__list {
       display: flex;
       justify-content: space-around;
+      align-items: center;
       flex-wrap: wrap;
     }
 
@@ -65,9 +68,22 @@
 
     }
 
-    //&__item:nth-child(3) {
-    //  margin-left: 160px;
-    //}
+    &__link {
+      padding: 0;
+      padding-top: 15px;
+      padding-bottom: 15px;
+
+      font-size: 14px;
+      line-height: 26px;
+      color: #000000;
+
+      background: none;
+      border: none;
+    }
+
+    &__item:nth-child(2) {
+      margin-right: 150px;
+    }
 
     &__toggle {
       display: none;
