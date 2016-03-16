@@ -1,20 +1,44 @@
 .features {
-  outline: 1px solid #64003c;
-  //padding: 5px;
+  text-align: center;
+
+  &__header {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__description {
+    line-height: 26px;
+  }
 
   @media #{$tablet-width} {
-    width: auto;
+    //width: auto;
 
     &__header {
-      width: 628px;
-      min-height: 150px;
-      margin: 0 auto;
-
-      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      margin-left: 140px;
+      margin-right: 140px;
     }
 
     &__title {
-      margin: 0;
+      font-size: 21px;
+    }
+  }
+
+  @media #{$desktop-width} {
+    &__header {
+      margin-right: 357px;
+      margin-left: 357px;
     }
   }
 }
