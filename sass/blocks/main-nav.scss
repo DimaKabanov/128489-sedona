@@ -16,7 +16,6 @@
 
   &__link {
     display: block;
-    //padding: 9px 21px;
     padding-top: 7px;
     padding-bottom: 7px;
 
@@ -52,12 +51,23 @@
   }
 
   @media #{$tablet-width} {
-    width: 100%;
+    width: auto;
+
+    min-height: 55px;
+
+    &__list {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
 
     &__item {
-      display: inline-block;
-      vertical-align: top;
+
     }
+
+    //&__item:nth-child(3) {
+    //  margin-left: 160px;
+    //}
 
     &__toggle {
       display: none;

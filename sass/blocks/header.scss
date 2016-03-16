@@ -4,9 +4,11 @@
   //outline: 1px solid #0000AA;
 
   @media #{$tablet-width} {
+    //display: flex;
+    //flex-direction: column;
     position: relative;
 
-    min-height: 56px;
+    min-height: 55px;
   }
 }
 
