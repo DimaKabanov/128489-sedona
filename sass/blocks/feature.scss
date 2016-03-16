@@ -1,4 +1,29 @@
 .feature {
+
+
+  &__number span {
+    position: relative;
+    z-index: 2;
+
+    display: inline;
+    padding: 0 6px;
+
+    background: #ffffff;
+  }
+
+  &__number::after {
+    content: "";
+
+    position: relative;
+    top: -11px;
+    z-index: 1;
+
+    display: block;
+    width: 58px;
+    margin: 0 auto;
+    border-bottom: 2px solid black;
+  }
+
   outline: 1px solid red;
 
   @media #{$tablet-width} {
