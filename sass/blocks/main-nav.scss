@@ -1,16 +1,48 @@
 .main-nav {
-  width: 320px;
-  min-height: 56px;
-  margin: 0 auto;
+  position: relative;
 
-  outline: 1px solid #00AA00;
+  width: 320px;
+  min-height: 55px;
+
+  text-align: center;
 
   &__list {
     margin: 0;
     padding: 0;
 
     list-style: none;
+    font-weight: bold;
   }
+
+  &__link {
+    display: block;
+    padding: 12px 21px;
+
+    font-size: 18px;
+    line-height: 40px;
+    color: #ffffff;
+    text-decoration: none;
+
+    background-color: #81b3d2;
+    border-bottom: 1px solid #678fa8;
+    border-top: 1px solid #9ac2db;
+  }
+
+  &__toggle {
+    position: absolute;
+    bottom: 45px;
+    right: 20px;
+
+    width: 23px;
+    height: 21px;
+
+    font-size: 0;
+  }
+
+  &__toggle--opened {
+    top: 17px;
+  }
+
 
   @media #{$tablet-width} {
     width: 100%;
