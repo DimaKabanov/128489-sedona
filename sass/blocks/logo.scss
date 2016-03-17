@@ -7,8 +7,10 @@
   @media #{$tablet-width} {
     position: absolute;
     top: 0;
+    margin: 0;
     left: 50%;
-    margin-left: -51px;
+    transform: translateX(-50%);
+    margin-left: -25px;
   }
 
   @media #{$desktop-width} {

@@ -1,5 +1,18 @@
 .feature {
+  padding-top: 40px;
+  padding-bottom: 40px;
 
+  &__title {
+
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  &__number {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
   &__number span {
     position: relative;
@@ -22,6 +35,10 @@
     width: 58px;
     margin: 0 auto;
     border-bottom: 2px solid black;
+  }
+
+  &__text {
+    margin: 0;
   }
 
   outline: 1px solid red;
