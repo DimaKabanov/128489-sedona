@@ -8,25 +8,26 @@
 
     & .feature__text {
       border-bottom: 1px solid #d6d6d6;
+
+      // Удаляются линии и отступы на планшетной версии
+
+      @media #{$tablet-width} {
+        border: none;
+        padding-bottom: 0;
+      }
     }
+
+    // Удаляется линия у пятого элемента на мобильной версии
 
     & .feature:last-child {
       & .feature__text {
-        padding-bottom: 31px;
         border-bottom: none;
       }
     }
   }
 
-  //&__row:nth-child(3) {
-  //  text-align: left;
-  //}
-
   &__header {
-    margin-top: 40px;
-    margin-bottom: 30px;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 40px 30px 30px;
   }
 
   &__title {
@@ -42,13 +43,9 @@
   }
 
   @media #{$tablet-width} {
-    //width: auto;
 
     &__header {
-      margin-top: 50px;
-      margin-bottom: 50px;
-      margin-left: 140px;
-      margin-right: 140px;
+      margin: 50px 140px;
     }
 
     &__title {

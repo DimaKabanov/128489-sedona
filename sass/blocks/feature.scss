@@ -39,7 +39,17 @@
   @media #{$tablet-width} {
     float: left;
     width: 256px;
-    min-height: 256px;
+
+    padding-top: 45px;
+    padding-bottom: 45px;
+
+    &__number {
+      margin-bottom: 25px;
+    }
+
+    &__text {
+      border-bottom: none;
+    }
   }
 
   @media #{$desktop-width} {
