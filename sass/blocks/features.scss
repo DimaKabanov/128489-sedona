@@ -1,5 +1,13 @@
 .features {
   text-align: center;
+  
+  &__bg--gray {
+    background-color: $gray-base;
+  }
+
+  &__row:nth-child(3) {
+    text-align: left;
+  }
 
   &__header {
     margin-top: 40px;

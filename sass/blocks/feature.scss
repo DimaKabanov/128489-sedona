@@ -2,6 +2,10 @@
   padding-top: 40px;
   padding-bottom: 40px;
 
+  &__bg--blue {
+    background-color: $blue-base;
+  }
+
   &__title {
 
     font-weight: bold;
@@ -12,36 +16,23 @@
   &__number {
     margin-top: 10px;
     margin-bottom: 10px;
-  }
 
-  &__number span {
-    position: relative;
-    z-index: 2;
+    &:after, &:before {
+      content: "—";
+    }
 
-    display: inline;
-    padding: 0 6px;
+    &:before {
+      margin-right: 5px;
+    }
 
-    background: #ffffff;
-  }
-
-  &__number::after {
-    content: "";
-
-    position: relative;
-    top: -11px;
-    z-index: 1;
-
-    display: block;
-    width: 58px;
-    margin: 0 auto;
-    border-bottom: 2px solid black;
+    &:after {
+      margin-left: 5px;
+    }
   }
 
   &__text {
-    margin: 0;
+    margin: 0 30px;
   }
-
-  outline: 1px solid red;
 
   @media #{$tablet-width} {
     float: left;
