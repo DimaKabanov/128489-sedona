@@ -1,13 +1,26 @@
 .features {
   text-align: center;
-  
+
   &__bg--gray {
     background-color: $gray-base;
+
+    // Линии снизу у преимуществ 3 и 4
+
+    & .feature__text {
+      border-bottom: 1px solid #d6d6d6;
+    }
+
+    & .feature:last-child {
+      & .feature__text {
+        padding-bottom: 31px;
+        border-bottom: none;
+      }
+    }
   }
 
-  &__row:nth-child(3) {
-    text-align: left;
-  }
+  //&__row:nth-child(3) {
+  //  text-align: left;
+  //}
 
   &__header {
     margin-top: 40px;
