@@ -58,14 +58,14 @@
     min-height: 55px;
 
     &__list {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
+      font-size: 0;
     }
 
     &__item {
+      display: inline-block;
+      width: 20%;
 
+      vertical-align: top;
     }
 
     &__link {
@@ -82,7 +82,7 @@
     }
 
     &__item:nth-child(2) {
-      margin-right: 150px;
+      margin-right: 20%;
     }
 
     &__toggle {
