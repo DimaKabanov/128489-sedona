@@ -34,12 +34,12 @@
     margin-bottom: 30px;
 
     font-weight: bold;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: $font-size-big;
+    line-height: $line-height-bigger;
   }
 
   &__description {
-    line-height: 26px;
+    line-height: $line-height-bigger;
   }
 
   @media #{$tablet-width} {
@@ -49,12 +49,14 @@
     }
 
     &__title {
-      font-size: 21px;
+      font-size: $font-size-bigger;
     }
 
     &__row {
       display: flex;
     }
+
+    // Меняем местами картинку и надпись 2-го преимущества
 
     &__row:nth-child(4) {
       & .feature {

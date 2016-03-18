@@ -19,8 +19,8 @@
     padding-top: 7px;
     padding-bottom: 7px;
 
-    font-size: 18px;
-    line-height: 40px;
+    font-size: $font-size-big;
+    line-height: $line-height-biggest;
     color: #ffffff;
     text-decoration: none;
 
@@ -73,8 +73,8 @@
       padding-top: 15px;
       padding-bottom: 15px;
 
-      font-size: 14px;
-      line-height: 26px;
+      font-size: $font-size-base;
+      line-height: $line-height-bigger;
       color: #000000;
 
       background: none;

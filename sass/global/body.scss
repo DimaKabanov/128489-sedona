@@ -1,6 +1,6 @@
 body {
-  font-size: 14px;
-  line-height: 21px;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
 }
