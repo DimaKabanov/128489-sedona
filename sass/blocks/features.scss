@@ -51,6 +51,16 @@
     &__title {
       font-size: 21px;
     }
+
+    &__row {
+      display: flex;
+    }
+
+    &__row:nth-child(4) {
+      & .feature {
+        order: 1;
+      }
+    }
   }
 
   @media #{$desktop-width} {
