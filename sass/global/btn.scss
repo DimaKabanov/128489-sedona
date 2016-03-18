@@ -1,3 +1,14 @@
 .btn {
-  border: 2px solid #00AA00;
+  display: block;
+
+  font-size: $font-size-bigger;
+  line-height: $line-height-bigger;
+  color: #ffffff;
+  text-decoration: none;
+
+  background: $blue-base;
+
+  &--search {
+    padding: 16px 46px 16px;
+  }
 }
