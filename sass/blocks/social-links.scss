@@ -1,5 +1,10 @@
 .social-links {
-  float: left;
-  outline: 1px solid #b31e00;
+  display: flex;
   width: 150px;
+
+  margin-bottom: 40px;
+
+  @media #{$tablet-width} {
+    margin-bottom: 0;
+  }
 }
