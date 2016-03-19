@@ -1,7 +1,28 @@
 .media-picture {
-  //width: 100%;
+  display: flex;
+  flex-direction: column;
+
   margin: 0;
-  outline: 1px solid #ffff00;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+
+    line-height: $line-height-big;
+    font-weight: bold;
+  }
+
+  &__author {
+    line-height: $line-height-big;
+    font-weight: normal;
+    text-transform: none;
+  }
+
+  &__img {
+    padding-bottom: 17px;
+  }
 
   img {
     width: 280px;
