@@ -1,6 +1,22 @@
 .features {
   text-align: center;
 
+  &__header {
+    margin: 40px 30px 30px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+
+    font-weight: bold;
+    font-size: $font-size-big;
+    line-height: $line-height-bigger;
+  }
+
+  &__description {
+    line-height: $line-height-bigger;
+  }
+
   &__bg--gray {
     background-color: $gray-base;
 
@@ -17,7 +33,7 @@
       }
     }
 
-    // Удаляется линия у пятого элемента на мобильной версии
+    // Удаляется линия у пятого преимущества на мобильной версии
 
     & .feature:last-child {
       & .feature__text {
@@ -26,20 +42,30 @@
     }
   }
 
-  &__header {
-    margin: 40px 30px 30px;
-  }
+  // Выравнивание преимуществ с картинкой по левому краю
 
-  &__title {
-    margin-bottom: 30px;
+  &__row--left {
+    padding-bottom: 30px;
 
-    font-weight: bold;
-    font-size: $font-size-big;
-    line-height: $line-height-bigger;
-  }
+    & .feature {
+      margin-left: 70px;
 
-  &__description {
-    line-height: $line-height-bigger;
+      text-align: left;
+
+      // Выравнивание преимуществ с картинкой по центру
+
+      @media #{$tablet-width} {
+        padding-top: 160px;
+        margin: 0 30px;
+
+        text-align: center;
+      }
+
+      &__text {
+        margin: 20px 0 0;
+        padding: 0;
+      }
+    }
   }
 
   @media #{$tablet-width} {
@@ -63,12 +89,24 @@
         order: 1;
       }
     }
+
+    // Меняем местами блок Еда и блок Сувениры
+
+    &__row--left {
+      & .feature:nth-child(2) {
+        order: 2;
+      }
+    }
   }
 
   @media #{$desktop-width} {
     &__header {
       margin-right: 357px;
       margin-left: 357px;
+    }
+
+    &__row--left {
+      padding-bottom: 50px;
     }
   }
 }
