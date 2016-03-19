@@ -22,31 +22,35 @@
 
   &__img {
     padding-bottom: 17px;
-  }
 
-  img {
     width: 280px;
     height: 280px;
   }
 
   @media #{$tablet-width} {
-    img {
+    margin: 0;
+
+    &__description {
+      background-color: $gray-base;
+    }
+
+    &__img {
       width: 324px;
       height: 267px;
     }
 
-    img:first-child {
+    &__img:first-child {
       width: 100%
     }
   }
 
   @media #{$desktop-width} {
-    img {
+    &__img {
       width: 400px;
       height: 267px;
     }
 
-    img:first-child {
+    &__img:first-child {
       width: 100%
     }
   }
