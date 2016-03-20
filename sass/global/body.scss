@@ -13,3 +13,22 @@ body {
     clear: both;
   }
 }
+
+::-webkit-input-placeholder {
+  font-weight: bold;
+  //font-size: $font-size-big;
+  //line-height: $line-height-big;
+  color:#000000;
+}
+
+::-moz-placeholder {
+  color:#000000;
+}/* Firefox 19+ */
+
+:-moz-placeholder {
+  color:#000000;
+}/* Firefox 18- */
+
+:-ms-input-placeholder {
+  color:#000000;
+}

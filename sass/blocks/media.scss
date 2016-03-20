@@ -1,25 +1,15 @@
 .media {
 
   &__header {
-    padding-top: 40px;
-    padding-bottom: 30px;
-
-    text-align: center;
+    @include base-header;
   }
 
   &__title {
-    margin-top: 0;
-    margin-bottom: 30px;
-
-    font-size: $font-size-big;
-    line-height: $line-height-bigger;
-    font-weight: bold;
+    @include base-title;
   }
 
   &__description {
-    margin: 0 25px;
-
-    line-height: $line-height-big;
+    @include base-description;
   }
 
   &__items {

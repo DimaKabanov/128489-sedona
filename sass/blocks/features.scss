@@ -2,19 +2,15 @@
   text-align: center;
 
   &__header {
-    margin: 40px 30px 30px;
+    @include base-header;
   }
 
   &__title {
-    margin-bottom: 30px;
-
-    font-weight: bold;
-    font-size: $font-size-big;
-    line-height: $line-height-bigger;
+    @include base-title;
   }
 
   &__description {
-    line-height: $line-height-bigger;
+    @include base-description;
   }
 
   &__bg--gray {
