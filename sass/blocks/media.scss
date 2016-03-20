@@ -57,6 +57,14 @@
     line-height: $line-height-big;
   }
 
+  &__video-content {
+    position: relative;
+
+    height: 201px;
+
+    background-image: url("../../img/video-mobile.jpg");
+  }
+
 
 @media #{$tablet-width} {
   display: flex;
@@ -100,7 +108,7 @@
 
   &__video {
     padding-top: 65px;
-    height: 500px;
+    //height: 500px;
 
     border: none;
   }
@@ -114,6 +122,12 @@
     margin-bottom: 75px;
     margin-left: 115px;
     margin-right: 115px;
+  }
+
+  &__video-content {
+    position: static;
+    display: flex;
+    height: 500px;
   }
 }
 
