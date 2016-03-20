@@ -55,5 +55,17 @@
     &__img:first-child {
       width: 100%
     }
+
+    &__description {
+      position: absolute;
+      z-index: 2;
+      bottom: 0;
+
+      width: 100%;
+      box-sizing: border-box;
+
+      color: #d4d5d4;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
   }
 }

@@ -95,6 +95,7 @@
     position: absolute;
     bottom: 30px;
     right: 21px;
+    z-index: 2;
   }
 
   &__video {
@@ -122,6 +123,21 @@
 
     &__items {
       width: 400px;
+    }
+
+    &__like {
+      color: #d4d5d4;
+    }
+
+    &__video {
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    &__video-description {
+      //margin-bottom: 75px;
+      margin-left: 190px;
+      margin-right: 190px;
     }
   }
 }
