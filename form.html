@@ -47,8 +47,8 @@
       </header>
 
       <!-- form -->
-      <div class="recall__form">
-        <form action="#" method="post">
+      <!--<div class="recall__form">-->
+        <form class="recall__form" action="#" method="post">
 
           <!-- form-name -->
           <div class="recall__form-row">
@@ -74,7 +74,7 @@
           </div>
 
           <!-- form-contacts -->
-          <div class="recall__form-row">
+          <div class="recall__form-row  recall__form--block">
             <fieldset class="recall__form-content">
               <legend class="recall__content-title">Контактаня информация:</legend>
 
@@ -119,31 +119,33 @@
             <fieldset class="recall__form-content">
               <legend class="recall__content-title">Посещенные достопримечательности:</legend>
 
-              <div class="recall__item-attraction">
-                <input type="checkbox" id="devil's-bridge" name="devil's-bridge">
-                <label for="devil's-bridge">Мост дьявола</label>
-              </div>
+              <div class="recall__form--flexbox">
+                <div class="recall__item-attraction">
+                  <input type="checkbox" id="devil's-bridge" name="devil's-bridge">
+                  <label for="devil's-bridge">Мост дьявола</label>
+                </div>
 
-              <div class="recall__item-attraction">
-                <input type="checkbox" id="slide-park" name="slide-park">
-                <label for="slide-park">Слайд-парк</label>
-              </div>
+                <div class="recall__item-attraction">
+                  <input type="checkbox" id="slide-park" name="slide-park">
+                  <label for="slide-park">Слайд-парк</label>
+                </div>
 
-              <div class="recall__item-attraction">
-                <input type="checkbox" id="mount-bell" name="mount-bell">
-                <label for="mount-bell">Гора-колокол</label>
-              </div>
+                <div class="recall__item-attraction">
+                  <input type="checkbox" id="mount-bell" name="mount-bell">
+                  <label for="mount-bell">Гора-колокол</label>
+                </div>
 
-              <div class="recall__item-attraction">
-                <input type="checkbox" id="red-rocks" name="red-rocks">
-                <label for="red-rocks">Крассные скалы</label>
+                <div class="recall__item-attraction">
+                  <input type="checkbox" id="red-rocks" name="red-rocks">
+                  <label for="red-rocks">Крассные скалы</label>
+                </div>
               </div>
 
             </fieldset>
           </div>
 
           <!-- form-emotions -->
-          <div class="recall__form-row">
+          <div class="recall__form-row  recall__form--block">
             <div class="recall__form-content">
               <label for="emotions">Опишите свои эмоции</label>
               <textarea class="recall__form-emotions" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -151,14 +153,14 @@
           </div>
 
           <!-- form-submit -->
-          <button class="btn  btn--submit" value="Отправить отзыв"></button>
+          <button class="btn  btn--submit">Отправить отзыв</button>
 
         </form>
-      </div>
+      <!--</div>-->
     </section>
 
     <!-- footer -->
-    <footer class="footer clearfix">
+    <footer class="footer">
       <div class="footer__hashtag">#Visitsedona</div>
 
       <!-- footer-social -->
@@ -172,7 +174,7 @@
       <div class="footer__copyright">
         <span class="footer__copyright-name">Разработанно</span>
         <a href="#" class="footer__copyright-link">
-          <img class="footer__copyright-picture" src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy">
+          <img class="footer__copyright-picture" src="http://placehold.it/150x100" width="27" height="34" alt="HTML Academy">
         </a>
       </div>
 

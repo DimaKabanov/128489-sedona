@@ -91,6 +91,7 @@
   }
 
   @media #{$tablet-width} {
+
     &__header {
       width: 628px;
       min-height: 150px;
@@ -100,8 +101,37 @@
     }
 
     &__form {
-     margin-left: 60px;
-     margin-right: 60px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+
+    &__form-row {
+      border: none;
+    }
+
+    &__form--block {
+      display: block;
+      width: 100%;
+    }
+
+    &__form--flexbox {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+
+    &__form-row:nth-child(3) {
+      order: -1;
+    }
+
+    &__form-content {
+      margin: 0;
     }
 
     //&__form-emotions {
