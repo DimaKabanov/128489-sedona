@@ -79,6 +79,85 @@
     }
   }
 
+  // Кастомизация radio
+
+  &__item-effect {
+    & input[type="radio"] {
+      display: none;
+    }
+
+    & input[type="radio"] + label {
+      position: relative;
+      padding-left: 80px;
+      display: block;
+
+      text-transform: none;
+      font-size: $font-size-big;
+      line-height: 56px;
+      font-weight:bold;
+      margin-bottom: 20px;
+    }
+
+    & input[type="radio"] + label::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background-color: #f2f2f2;
+    }
+
+    & input[type="radio"]:checked + label::after {
+      content: "";
+      position: absolute;
+      top: 16px;
+      left: 18px;
+
+      display: block;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background-color: #333333;
+    }
+  }
+
+  // Кастомизация checkbox
+
+  &__item-attraction {
+    & input[type="checkbox"] {
+      display: none;
+    }
+
+    & input[type="checkbox"] + label {
+      position: relative;
+      padding-left: 80px;
+      display: block;
+
+      text-transform: none;
+      font-size: $font-size-big;
+      line-height: 56px;
+      font-weight:bold;
+      margin-bottom: 20px;
+    }
+
+    & input[type="checkbox"] + label::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      display: block;
+      width: 56px;
+      height: 56px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+    }
+  }
+
   &__form-emotions {
     padding: 20px;
     width: 100%;
