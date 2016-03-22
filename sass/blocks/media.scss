@@ -1,4 +1,5 @@
 .media {
+  margin-bottom: 140px;
 
   &__header {
     @include base-header;
@@ -56,74 +57,76 @@
   }
 
 
-@media #{$tablet-width} {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-left: 60px;
-  margin-right: 60px;
-
-  &__header {
-    margin: 0 auto;
-    padding-top: 70px;
-    padding-bottom: 70px;
-
-    width: 480px;
-  }
-
-  &__title {
-    font-size: $font-size-biggest;
-    line-height: $line-height-biggest;
-  }
-
-  &__items {
-    position: relative;
-
-    padding: 0;
-    width: 324px;
-
-    border: none;
-  }
-
-  &__items:nth-child(2) {
-    width: 100%;
-  }
-
-  &__like {
-    position: absolute;
-    bottom: 30px;
-    right: 21px;
-    z-index: 2;
-  }
-
-  &__video {
-    padding-top: 65px;
-    //height: 500px;
-
-    border: none;
-  }
-
-  &__video-title {
-    font-size: $font-size-biggest;
-    line-height: $line-height-biggest;
-  }
-
-  &__video-description {
-    margin-bottom: 75px;
-    margin-left: 115px;
-    margin-right: 115px;
-  }
-
-  &__video-content {
-    position: static;
+  @media #{$tablet-width} {
     display: flex;
-    height: 500px;
+    flex-wrap: wrap;
+
+    margin-left: 60px;
+    margin-right: 60px;
+
+    &__header {
+      padding: 50px 0;
+      margin-left:  110px;
+      margin-right: 110px;
+    }
+
+    &__title {
+      font-size: $font-size-biggest;
+      line-height: $line-height-biggest;
+    }
+
+    &__items {
+      position: relative;
+
+      padding: 0;
+      width: 324px;
+
+      border: none;
+    }
+
+    &__items:nth-child(2) {
+      width: 100%;
+    }
+
+    &__like {
+      position: absolute;
+      bottom: 30px;
+      right: 21px;
+      z-index: 2;
+    }
+
+    &__video {
+      padding-top: 65px;
+      //height: 500px;
+
+      border: none;
+    }
+
+    &__video-title {
+      font-size: $font-size-biggest;
+      line-height: $line-height-biggest;
+    }
+
+    &__video-description {
+      margin-bottom: 75px;
+      margin-left: 115px;
+      margin-right: 115px;
+    }
+
+    &__video-content {
+      position: static;
+      display: flex;
+      height: 500px;
+    }
   }
-}
 
 
-@media #{$desktop-width} {
-  margin: 0;
+  @media #{$desktop-width} {
+    margin: 0;
+
+    &__header {
+      padding-top: 105px;
+    }
 
     &__items {
       width: 400px;

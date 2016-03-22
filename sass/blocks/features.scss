@@ -67,7 +67,9 @@
   @media #{$tablet-width} {
 
     &__header {
-      margin: 50px 140px;
+      padding: 50px 0;
+      margin-left:  110px;
+      margin-right: 110px;
     }
 
     &__title {
@@ -76,21 +78,36 @@
 
     &__row {
       display: flex;
-    }
 
-    // Меняем местами картинку и надпись 2-го преимущества
+      // Меняем местами картинку и надпись 2-го преимущества
 
-    &__row:nth-child(4) {
-      & .feature {
-        order: 1;
+      &:nth-child(4) {
+        & .feature {
+          order: 1;
+        }
       }
     }
 
-    // Меняем местами блок Еда и блок Сувениры
-
     &__row--left {
+      padding-bottom: 61px;
+
+      // Меняем местами блок Еда и блок Сувениры
+
       & .feature:nth-child(2) {
         order: 2;
+      }
+    }
+
+    &__bg--gray {
+      padding-top: 41px;
+      padding-bottom: 41px;
+
+      // Обнуляем верхний отступ у преимуществ 3, 4, 5 на планшетной версии
+
+      & .feature {
+        padding-top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
       }
     }
   }
@@ -103,6 +120,10 @@
 
     &__row--left {
       padding-bottom: 50px;
+    }
+
+    &__bg--gray {
+      padding-bottom: 65px;
     }
   }
 }

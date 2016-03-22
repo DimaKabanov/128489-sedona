@@ -1,4 +1,5 @@
 .recall {
+  margin-bottom: 40px;
 
   &__header {
     @include base-header;
@@ -114,8 +115,8 @@
     & input[type="radio"]:checked + label::after {
       content: "";
       position: absolute;
-      top: 16px;
-      left: 18px;
+      top: 17px;
+      left: 17px;
 
       display: block;
       width: 22px;
@@ -172,52 +173,66 @@
   @media #{$tablet-width} {
 
     &__header {
-      width: 628px;
-      min-height: 150px;
-      margin: 0 auto;
+      padding: 50px 0;
+      margin-left:  165px;
+      margin-right: 165px;
+    }
 
-      text-align: center;
+    &__title {
+      font-size: $font-size-biggest;
+      line-height: $line-height-biggest;
     }
 
     &__form {
       display: flex;
       flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: space-between;
+      //flex-direction: row;
+      //justify-content: center;
 
       margin-left: 60px;
       margin-right: 60px;
     }
 
-    &__form-row {
-      border: none;
-    }
-
-    &__form--block {
-      display: block;
-      width: 100%;
-    }
-
-    &__form--flexbox {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-
-    }
-
-    &__form-row:nth-child(3) {
-      order: -1;
-    }
-
-    &__form-content {
-      margin: 0;
-    }
-
-    //&__form-emotions {
-    //  width: 100%;
-    //  min-height: 160px;
-    //  resize: none;
-    //}
+  //  &__form-row {
+  //    padding-top: 0;
+  //    border: none;
+  //  }
+  //
+  //  // Делаем блочным блок с контактами
+  //
+  //  &__form--block {
+  //    display: block;
+  //    width: 100%;
+  //  }
+  //
+  //  //&__form-content {
+  //  //  display: flex;
+  //  //}
+  //
+  //  &__form-content--flexbox {
+  //    display: flex;
+  //  }
+  //
+  //  &__form--flexbox {
+  //    display: flex;
+  //    //flex-wrap: wrap;
+  //    flex-direction: column;
+  //    //align-items: center;
+  //    //justify-content: center;
+  //
+  //  }
+  //
+  //  //&__item-attraction {
+  //  //  margin-right: 10px;
+  //  //}
+  //
+  //  &__form-row:nth-child(3) {
+  //    order: -1;
+  //  }
+  //
+  //  &__form-content {
+  //    margin: 0;
+  //  }
   }
 
   @media #{$desktop-width} {

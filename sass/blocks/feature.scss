@@ -1,21 +1,28 @@
 .feature {
-  padding-top: 30px;
+  padding-top: 25px;
 
   &__bg--blue {
+    padding-top: 40px;
+
     background-color: $blue-base;
+    color: #ffffff;
+
+    // Переопределяем отступ снизу у синих блоков
+
+    & .feature__text {
+      padding-bottom: 40px;
+    }
   }
 
   &__title {
-
     font-weight: bold;
     font-size: $font-size-big;
     line-height: $line-height-bigger;
-
   }
 
   &__number {
-    margin-top: 15px;
-    margin-bottom: 20px;
+    margin-top: 13px;
+    margin-bottom: 17px;
 
     //Декоративные полоски у номера
 
@@ -34,15 +41,12 @@
 
   &__text {
     margin: 0 30px;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
   }
 
   @media #{$tablet-width} {
-    float: left;
+    //padding-top: 0;
     width: 256px;
-
-    padding-top: 33px;
-    padding-bottom: 33px;
 
     &__title {
       margin-left: 63px;
