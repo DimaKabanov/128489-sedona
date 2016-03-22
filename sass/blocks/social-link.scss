@@ -1,3 +1,13 @@
 .social-link {
+  margin-right: 6px;
+  width: 46px;
+  height: 48px;
 
+  font-size: 0;
+
+  background-color: $blue-base;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }

@@ -19,8 +19,8 @@
     padding-top: 7px;
     padding-bottom: 7px;
 
-    font-size: 18px;
-    line-height: 40px;
+    font-size: $font-size-big;
+    line-height: $line-height-biggest;
     color: #ffffff;
     text-decoration: none;
 
@@ -58,14 +58,14 @@
     min-height: 55px;
 
     &__list {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
+      font-size: 0;
     }
 
     &__item {
+      display: inline-block;
+      width: 20%;
 
+      vertical-align: top;
     }
 
     &__link {
@@ -74,7 +74,8 @@
       padding-bottom: 15px;
 
       font-size: $font-size-base;
-      line-height: 26px;
+      line-height: $line-height-bigger;
+
       color: #000000;
 
       background: none;
@@ -82,7 +83,7 @@
     }
 
     &__item:nth-child(2) {
-      margin-right: 150px;
+      margin-right: 20%;
     }
 
     &__toggle {

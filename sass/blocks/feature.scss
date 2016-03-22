@@ -9,12 +9,13 @@
 
     font-weight: bold;
     font-size: $font-size-big;
-    line-height: 26px;
+    line-height: $line-height-bigger;
+
   }
 
   &__number {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 
     //Декоративные полоски у номера
 
@@ -33,26 +34,39 @@
 
   &__text {
     margin: 0 30px;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
   }
 
   @media #{$tablet-width} {
     float: left;
     width: 256px;
 
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+
+    &__title {
+      margin-left: 63px;
+      margin-right: 63px;
+    }
 
     &__number {
       margin-bottom: 25px;
     }
 
     &__text {
+      padding: 0;
+
       border-bottom: none;
     }
   }
 
   @media #{$desktop-width} {
+    padding-top: 50px;
     width: 400px;
+
+    &__title {
+      margin-left: 135px;
+      margin-right: 135px;
+    }
   }
 }

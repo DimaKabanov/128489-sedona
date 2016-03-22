@@ -4,6 +4,7 @@ $tablet-width: "(min-width: 768px)";
 $desktop-width: "(min-width: 1220px)";
 
 //colors
+
 $blue-base: #81b3d2;
 $gray-base: #eeeeee;
 
@@ -17,3 +18,6 @@ $font-size-bigger: round($font-size-base * 1.5); // 21px
 $font-size-biggest: round($font-size-base * 2.15); // 30px
 
 $line-height-base: 21px;
+$line-height-big: round($line-height-base * 1.15); // 24px
+$line-height-bigger: round($line-height-base * 1.24); // 26px
+$line-height-biggest: round($line-height-base * 1.91); // 40px

@@ -1,0 +1,21 @@
+@mixin base-header() {
+  padding-top: 40px;
+  padding-bottom: 30px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+}
+
+@mixin base-title() {
+  font-size: $font-size-big;
+  line-height: $line-height-bigger;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+@mixin base-description() {
+  margin: 0;
+  line-height: $line-height-bigger;
+}
