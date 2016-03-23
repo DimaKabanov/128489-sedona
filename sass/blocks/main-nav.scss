@@ -27,6 +27,15 @@
     background-color: $blue-base;
     border-bottom: 1px solid #678fa8;
     border-top: 1px solid #9ac2db;
+
+    &:hover {
+      background-color: $blue-darker;
+    }
+
+    &:active {
+      background-color: $blue-darkest;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 
   &__toggle {
@@ -80,6 +89,15 @@
 
       background: none;
       border: none;
+
+      &:hover {
+        color: $blue-base;
+        background-color: #ffffff;
+      }
+
+      &:active {
+        color: rgba(0, 0, 0, 0.3);
+      }
     }
 
     &__item:nth-child(2) {
