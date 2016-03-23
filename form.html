@@ -54,7 +54,7 @@
             <!-- form-name -->
             <div class="recall__form-row">
               <fieldset class="recall__form-content">
-                <legend class="recall__content-title">Представьтесь, пожалуйста:</legend>
+                <legend class="recall__content-title">Представьтесь<span class="recall__content-title--none">, пожалуйста</span>:</legend>
 
                 <div class="recall__item-name">
                   <label for="name">Имя:</label>
@@ -77,7 +77,11 @@
             <!-- form-contacts -->
             <div class="recall__form-row  recall__form--block">
               <fieldset class="recall__form-content">
-                <legend class="recall__content-title">Контактаня информация:</legend>
+                <div class="recall__content-title  recall__content-title--line">
+                  <span class="recall__content-title-text">
+                    Контактаня информация:
+                  </span>
+                </div>
 
                 <div class="recall__item-contacts">
                   <label for="phone">Контактный телефон:</label>
@@ -118,7 +122,11 @@
             <!-- form-attraction -->
             <div class="recall__form-row">
               <fieldset class="recall__form-content">
-                <legend class="recall__content-title">Посещенные достопримечательности:</legend>
+                <div class="recall__content-title  recall__content-title--line">
+                  <span class="recall__content-title-text">
+                    Посещенные достопримечательности:
+                  </span>
+                </div>
 
                 <div class="recall__checkbox-group">
                   <div class="recall__checkbox--flexbox">
@@ -131,9 +139,9 @@
                       <input type="checkbox" id="slide-park" name="slide-park">
                       <label for="slide-park">Слайд-парк</label>
                     </div>
-                  </div>
+                  <!--</div>-->
 
-                  <div class="recall__checkbox--flexbox">
+                  <!--<div class="recall__checkbox&#45;&#45;flexbox">-->
                     <div class="recall__item-attraction">
                       <input type="checkbox" id="mount-bell" name="mount-bell">
                       <label for="mount-bell">Гора-колокол</label>
@@ -150,13 +158,16 @@
             </div>
 
           </div>
+
           <!-- form-emotions -->
-          <!--<div class="recall__form-row  recall__form&#45;&#45;block">-->
-            <div class="recall__form-content">
-              <label for="emotions">Опишите свои эмоции</label>
-              <textarea class="recall__form-emotions" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+          <div class="recall__form-content">
+            <div class="recall__content-title  recall__content-title--line">
+              <span class="recall__content-title-text">
+                Опишите свои эмоции:
+              </span>
             </div>
-          <!--</div>-->
+            <textarea class="recall__form-emotions" id="emotions" name="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+          </div>
 
           <!-- form-submit -->
           <button class="btn  btn--submit">Отправить отзыв</button>

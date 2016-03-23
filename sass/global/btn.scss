@@ -27,5 +27,14 @@
   &--submit {
     padding: 16px 46px 16px;
     text-transform: uppercase;
+
+    &:hover {
+      background-color: $blue-darker;
+    }
+
+    &:active {
+      background-color: $blue-darkest;
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
 }
