@@ -183,56 +183,47 @@
       line-height: $line-height-biggest;
     }
 
-    &__form {
+    &__form--flexbox {
       display: flex;
       flex-wrap: wrap;
-      //flex-direction: row;
-      //justify-content: center;
+      justify-content: space-between;
 
       margin-left: 60px;
       margin-right: 60px;
     }
 
-  //  &__form-row {
-  //    padding-top: 0;
-  //    border: none;
-  //  }
-  //
-  //  // Делаем блочным блок с контактами
-  //
-  //  &__form--block {
-  //    display: block;
-  //    width: 100%;
-  //  }
-  //
-  //  //&__form-content {
-  //  //  display: flex;
-  //  //}
-  //
-  //  &__form-content--flexbox {
-  //    display: flex;
-  //  }
-  //
-  //  &__form--flexbox {
-  //    display: flex;
-  //    //flex-wrap: wrap;
-  //    flex-direction: column;
-  //    //align-items: center;
-  //    //justify-content: center;
-  //
-  //  }
-  //
-  //  //&__item-attraction {
-  //  //  margin-right: 10px;
-  //  //}
-  //
-  //  &__form-row:nth-child(3) {
-  //    order: -1;
-  //  }
-  //
-  //  &__form-content {
-  //    margin: 0;
-  //  }
+    &__form-row {
+      padding-top: 0;
+      border: none;
+    }
+
+    &__form-content {
+      margin: 0;
+    }
+
+    // Делаем блочным блок с контактами
+
+    &__form--block {
+      display: block;
+      width: 100%;
+    }
+
+    &__checkbox-group {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__checkbox--flexbox {
+      display: flex;
+      flex-wrap: wrap;
+
+    }
+
+    // Меняем местами блоки на форме
+
+    &__form-row:nth-child(3) {
+      order: -1;
+    }
   }
 
   @media #{$desktop-width} {

@@ -49,98 +49,107 @@
         <!-- form -->
         <form class="recall__form" action="#" method="post">
 
-          <!-- form-name -->
-          <div class="recall__form-row">
-            <fieldset class="recall__form-content">
-              <legend class="recall__content-title">Представьтесь, пожалуйста:</legend>
+          <div class="recall__form--flexbox">
 
-              <div class="recall__item-name">
-                <label for="name">Имя:</label>
-                <input type="text" id="name" name="name" placeholder="Петр" required>
-              </div>
+            <!-- form-name -->
+            <div class="recall__form-row">
+              <fieldset class="recall__form-content">
+                <legend class="recall__content-title">Представьтесь, пожалуйста:</legend>
 
-              <div class="recall__item-name">
-                <label for="surname">Фамилия:</label>
-                <input type="text" id="surname" name="name" placeholder="Иванов" required>
-              </div>
+                <div class="recall__item-name">
+                  <label for="name">Имя:</label>
+                  <input type="text" id="name" name="name" placeholder="Петр" required>
+                </div>
 
-              <div class="recall__item-name">
-                <label for="patronymic">Отчество:</label>
-                <input type="text" id="patronymic" name="name" placeholder="Александрович" required>
-              </div>
+                <div class="recall__item-name">
+                  <label for="surname">Фамилия:</label>
+                  <input type="text" id="surname" name="name" placeholder="Иванов" required>
+                </div>
 
-            </fieldset>
+                <div class="recall__item-name">
+                  <label for="patronymic">Отчество:</label>
+                  <input type="text" id="patronymic" name="name" placeholder="Александрович" required>
+                </div>
+
+              </fieldset>
+            </div>
+
+            <!-- form-contacts -->
+            <div class="recall__form-row  recall__form--block">
+              <fieldset class="recall__form-content">
+                <legend class="recall__content-title">Контактаня информация:</legend>
+
+                <div class="recall__item-contacts">
+                  <label for="phone">Контактный телефон:</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+                </div>
+
+                <div class="recall__item-contacts">
+                  <label for="email">Электронная почта:</label>
+                  <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
+                </div>
+
+              </fieldset>
+            </div>
+
+            <!-- form-effect -->
+            <div class="recall__form-row">
+              <fieldset class="recall__form-content">
+                <legend class="recall__content-title">Ваше общее впечатление:</legend>
+
+                <div class="recall__item-effect">
+                  <input type="radio" id="positive" name="radio">
+                  <label for="positive">Скорее положительное</label>
+                </div>
+
+                <div class="recall__item-effect">
+                  <input type="radio" id="negative" name="radio">
+                  <label for="negative">Скорее отрицательное</label>
+                </div>
+
+                <div class="recall__item-effect">
+                  <input type="radio" id="difficult" name="radio">
+                  <label for="difficult">Затрудняюсь ответить</label>
+                </div>
+
+              </fieldset>
+            </div>
+
+            <!-- form-attraction -->
+            <div class="recall__form-row">
+              <fieldset class="recall__form-content">
+                <legend class="recall__content-title">Посещенные достопримечательности:</legend>
+
+                <div class="recall__checkbox-group">
+                  <div class="recall__checkbox--flexbox">
+                    <div class="recall__item-attraction">
+                      <input type="checkbox" id="devil's-bridge" name="devil's-bridge">
+                      <label for="devil's-bridge">Мост дьявола</label>
+                    </div>
+
+                    <div class="recall__item-attraction">
+                      <input type="checkbox" id="slide-park" name="slide-park">
+                      <label for="slide-park">Слайд-парк</label>
+                    </div>
+                  </div>
+
+                  <div class="recall__checkbox--flexbox">
+                    <div class="recall__item-attraction">
+                      <input type="checkbox" id="mount-bell" name="mount-bell">
+                      <label for="mount-bell">Гора-колокол</label>
+                    </div>
+
+                    <div class="recall__item-attraction">
+                      <input type="checkbox" id="red-rocks" name="red-rocks">
+                      <label for="red-rocks">Крассные скалы</label>
+                    </div>
+                  </div>
+                </div>
+
+              </fieldset>
+            </div>
+
           </div>
-
-          <!-- form-contacts -->
-          <div class="recall__form-row">
-            <fieldset class="recall__form-content">
-              <legend class="recall__content-title">Контактаня информация:</legend>
-
-              <div class="recall__item-contacts">
-                <label for="phone">Контактный телефон:</label>
-                <input type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
-              </div>
-
-              <div class="recall__item-contacts">
-                <label for="email">Электронная почта:</label>
-                <input type="email" id="email" name="email" placeholder="Введите e-mail" required>
-              </div>
-
-            </fieldset>
-          </div>
-
-          <!-- form-effect -->
-          <div class="recall__form-row">
-            <fieldset class="recall__form-content">
-              <legend class="recall__content-title">Ваше общее впечатление:</legend>
-
-              <div class="recall__item-effect">
-                <input type="radio" id="positive" name="radio">
-                <label for="positive">Скорее положительное</label>
-              </div>
-
-              <div class="recall__item-effect">
-                <input type="radio" id="negative" name="radio">
-                <label for="negative">Скорее отрицательное</label>
-              </div>
-
-              <div class="recall__item-effect">
-                <input type="radio" id="difficult" name="radio">
-                <label for="difficult">Затрудняюсь ответить</label>
-              </div>
-
-            </fieldset>
-          </div>
-
-          <!-- form-attraction -->
-          <div class="recall__form-row">
-            <fieldset class="recall__form-content">
-              <legend class="recall__content-title">Посещенные достопримечательности:</legend>
-
-              <div class="recall__item-attraction">
-                <input type="checkbox" id="devil's-bridge" name="devil's-bridge">
-                <label for="devil's-bridge">Мост дьявола</label>
-              </div>
-
-              <div class="recall__item-attraction">
-                <input type="checkbox" id="slide-park" name="slide-park">
-                <label for="slide-park">Слайд-парк</label>
-              </div>
-
-              <div class="recall__item-attraction">
-                <input type="checkbox" id="mount-bell" name="mount-bell">
-                <label for="mount-bell">Гора-колокол</label>
-              </div>
-
-              <div class="recall__item-attraction">
-                <input type="checkbox" id="red-rocks" name="red-rocks">
-                <label for="red-rocks">Крассные скалы</label>
-              </div>
-
-            </fieldset>
-          </div>
-
           <!-- form-emotions -->
           <!--<div class="recall__form-row  recall__form&#45;&#45;block">-->
             <div class="recall__form-content">
