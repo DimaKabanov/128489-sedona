@@ -24,8 +24,9 @@
       // Удаляются линии и отступы на планшетной версии
 
       @media #{$tablet-width} {
-        border: none;
         padding-bottom: 0;
+
+        border: none;
       }
     }
 

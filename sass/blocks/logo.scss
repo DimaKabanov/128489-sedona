@@ -2,12 +2,14 @@
   width: 102px;
   height: 83px;
   margin: 0 auto;
+
   outline: 1px solid red;
 
   @media #{$tablet-width} {
     position: absolute;
     top: 0;
     left: 50%;
+
     transform: translateX(-50%);
   }
 

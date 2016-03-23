@@ -3,6 +3,7 @@
 
   font-size: $font-size-bigger;
   line-height: $line-height-bigger;
+
   color: #ffffff;
   text-decoration: none;
 
@@ -26,7 +27,5 @@
   &--submit {
     padding: 16px 46px 16px;
     text-transform: uppercase;
-    //margin-left: 20px;
-    //margin-right: 20px;
   }
 }

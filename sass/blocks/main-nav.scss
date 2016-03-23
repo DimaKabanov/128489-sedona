@@ -10,8 +10,9 @@
     margin: 0;
     padding: 0;
 
-    list-style: none;
     font-weight: bold;
+
+    list-style: none;
   }
 
   &__link {
@@ -21,9 +22,9 @@
 
     font-size: $font-size-big;
     line-height: $line-height-biggest;
+
     color: #ffffff;
     text-decoration: none;
-
     background-color: $blue-base;
     border-bottom: 1px solid #678fa8;
     border-top: 1px solid #9ac2db;
@@ -63,7 +64,6 @@
 
   @media #{$tablet-width} {
     width: auto;
-
     min-height: 55px;
 
     &__list {
@@ -78,15 +78,12 @@
     }
 
     &__link {
-      padding: 0;
-      padding-top: 15px;
-      padding-bottom: 15px;
+      padding: 15px 0;
 
       font-size: $font-size-base;
       line-height: $line-height-bigger;
 
       color: #000000;
-
       background: none;
       border: none;
 

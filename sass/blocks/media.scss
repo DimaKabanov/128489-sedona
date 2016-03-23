@@ -32,8 +32,9 @@
   &__video {
     padding-top: 35px;
 
-    border-top: 1px solid #e5e5e5;
     text-align: center;
+
+    border-top: 1px solid #e5e5e5;
     }
 
   &__video-title {
@@ -97,7 +98,6 @@
 
     &__video {
       padding-top: 65px;
-      //height: 500px;
 
       border: none;
     }
@@ -115,6 +115,7 @@
 
     &__video-content {
       position: static;
+
       display: flex;
       height: 500px;
     }
@@ -137,12 +138,12 @@
     }
 
     &__video {
-      width: 800px;
       margin: 0 auto;
+
+      width: 800px;
     }
 
     &__video-description {
-      //margin-bottom: 75px;
       margin-left: 190px;
       margin-right: 190px;
     }

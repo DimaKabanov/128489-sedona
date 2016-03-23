@@ -16,6 +16,7 @@
   &__form-row {
     padding-top: 20px;
     padding-bottom: 25px;
+
     border-top: 1px solid #e5e5e5;
   }
 
@@ -23,6 +24,7 @@
     padding: 0;
     margin-left: 20px;
     margin-right: 20px;
+
     border: none;
 
     & label[for="emotions"] {
@@ -52,10 +54,11 @@
 
     & input {
       padding: 20px;
-      outline: none;
-      border: none;
 
+      border: none;
       background-color: #f2f2f2;
+
+      outline: none;
 
       &:hover {
         background-color: #e5e5e5;
@@ -63,6 +66,7 @@
 
       &:focus {
         padding: 16px;
+
         background-color: #ffffff;
         border: 4px solid #e5e5e5;
       }
@@ -83,8 +87,10 @@
     & input {
       padding: 20px;
       margin-top: 10px;
+
       width: 100%;
       box-sizing: border-box;
+
       border: none;
       outline: none;
 
@@ -96,6 +102,7 @@
 
       &:focus {
         padding: 16px;
+
         background-color: #ffffff;
         border: 4px solid #e5e5e5;
       }
@@ -111,18 +118,21 @@
 
     & input[type="radio"] + label {
       position: relative;
-      padding-left: 80px;
-      display: block;
 
-      text-transform: none;
+      display: block;
+      margin-bottom: 20px;
+      padding-left: 80px;
+
       font-size: $font-size-big;
       line-height: 56px;
       font-weight:bold;
-      margin-bottom: 20px;
+
+      text-transform: none;
     }
 
     & input[type="radio"] + label::before {
       content: "";
+
       position: absolute;
       top: 0;
       left: 0;
@@ -130,13 +140,14 @@
       display: block;
       width: 56px;
       height: 56px;
+
       border-radius: 50%;
       background-color: #f2f2f2;
-
     }
 
     & input[type="radio"]:checked + label::after {
       content: "";
+
       position: absolute;
       top: 17px;
       left: 17px;
@@ -144,6 +155,7 @@
       display: block;
       width: 22px;
       height: 22px;
+
       border-radius: 50%;
       background-color: #333333;
     }
@@ -158,18 +170,21 @@
 
     & input[type="checkbox"] + label {
       position: relative;
-      padding-left: 80px;
-      display: block;
 
-      text-transform: none;
+      display: block;
+      padding-left: 80px;
+      margin-bottom: 20px;
+
       font-size: $font-size-big;
       line-height: 56px;
       font-weight:bold;
-      margin-bottom: 20px;
+
+      text-transform: none;
     }
 
     & input[type="checkbox"] + label::before {
       content: "";
+
       position: absolute;
       top: 0;
       left: 0;
@@ -177,6 +192,7 @@
       display: block;
       width: 56px;
       height: 56px;
+
       border-radius: 5px;
       background-color: #f2f2f2;
     }
@@ -186,12 +202,12 @@
     padding: 20px;
     width: 100%;
     min-height: 160px;
-    resize: none;
     box-sizing: border-box;
 
     background-color: #f2f2f2;
     border: none;
     outline: none;
+    resize: none;
 
     &:hover {
       background-color: #e5e5e5;
@@ -199,6 +215,7 @@
 
     &:focus {
       padding: 16px;
+
       background-color: #ffffff;
       border: 4px solid #e5e5e5;
     }
@@ -228,6 +245,7 @@
 
     &__form-row {
       padding-top: 0;
+
       border: none;
     }
 
