@@ -26,6 +26,8 @@
 
   &--submit {
     padding: 16px 46px 16px;
+    margin: 0 auto;
+
     text-transform: uppercase;
 
     &:hover {
@@ -35,6 +37,15 @@
     &:active {
       background-color: $blue-darkest;
       color: rgba(255, 255, 255, 0.3);
+    }
+
+    @media #{$tablet-width} {
+      margin: 0;
+      padding: 16px 75px 16px;
+    }
+
+    @media #{$desktop-width} {
+      padding: 16px 147px 16px;
     }
   }
 }
