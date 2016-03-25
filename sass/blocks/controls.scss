@@ -47,10 +47,10 @@
     & label {
       display: none;
     }
+  }
 
-    & input[id="subtitles"] {
-      margin-left: 120px;
-    }
+  &__views-subtitles {
+    margin-left: 120px;
   }
 
   @media #{$tablet-width} {
