@@ -1,3 +1,85 @@
 .controls {
-  outline: 1px solid #00AA00;
+  position: absolute;
+  bottom: -66px;
+  left: 50%;
+
+  width: 280px;
+  margin-left: -140px;
+
+  &__time {
+    position: relative;
+
+    height: 24px;
+    padding-top: 21px;
+    padding-right: 22px;
+    padding-left: 22px;
+
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  &__line {
+    height: 3px;
+
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  &--toggle {
+    position: absolute;
+    top: 18px;
+    left: 65px;
+    width: 9px;
+
+    height: 9px;
+
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  &__views {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    height: 66px;
+
+    background-color: #f2f2f2;
+
+    & label {
+      display: none;
+    }
+  }
+
+  &__views-subtitles {
+    margin-left: 120px;
+  }
+
+  @media #{$tablet-width} {
+    position: relative;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    margin-left: -324px;
+
+    &__time {
+      position: relative;
+      left: 94px;
+      bottom: 10px;
+
+      padding-top: 0;
+      width: 389px;
+
+      background-color: rgba(0, 0, 0, 0);
+    }
+
+    &--toggle {
+      top: 0;
+    }
+
+    &__views {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+  }
 }

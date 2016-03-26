@@ -1,12 +1,10 @@
 .header {
-  min-height: 280px;
-
-  outline: 1px solid #0000AA;
+  position: relative;
 
   @media #{$tablet-width} {
     position: relative;
 
-    min-height: 56px;
+    min-height: 55px;
   }
 }
 

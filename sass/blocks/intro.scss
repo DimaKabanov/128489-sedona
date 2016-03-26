@@ -1,8 +1,11 @@
 .intro {
   height: 389px;
-  outline: 1px solid green;
+  margin-top: -28px;
+
+  //outline: 1px solid green;
 
   @media #{$tablet-width} {
     height: 518px;
+    margin-top: 0;
   }
 }

@@ -1,20 +1,130 @@
 .features {
-  outline: 1px solid #64003c;
-  //padding: 5px;
+  text-align: center;
+
+  &__header {
+    @include base-header;
+  }
+
+  &__title {
+    @include base-title;
+  }
+
+  &__description {
+    @include base-description;
+  }
+
+  &__bg--gray {
+    background-color: $gray-base;
+
+    // Линии снизу у преимуществ 3 и 4
+
+    & .feature__text {
+      border-bottom: 1px solid #d6d6d6;
+
+      // Удаляются линии и отступы на планшетной версии
+
+      @media #{$tablet-width} {
+        padding-bottom: 0;
+
+        border: none;
+      }
+    }
+
+    // Удаляется линия у пятого преимущества на мобильной версии
+
+    & .feature:last-child {
+      & .feature__text {
+        border-bottom: none;
+      }
+    }
+  }
+
+  // Выравнивание преимуществ с картинкой по левому краю
+
+  &__row--left {
+    padding-bottom: 30px;
+
+    & .feature {
+      margin-left: 70px;
+
+      text-align: left;
+
+      // Выравнивание преимуществ с картинкой по центру
+
+      @media #{$tablet-width} {
+        padding-top: 160px;
+        margin: 0 30px;
+
+        text-align: center;
+      }
+
+      &__text {
+        margin: 20px 0 0;
+        padding: 0;
+      }
+    }
+  }
 
   @media #{$tablet-width} {
-    width: auto;
 
     &__header {
-      width: 628px;
-      min-height: 150px;
-      margin: 0 auto;
-
-      text-align: center;
+      padding: 50px 0;
+      margin-left:  110px;
+      margin-right: 110px;
     }
 
     &__title {
-      margin: 0;
+      font-size: $font-size-bigger;
+    }
+
+    &__row {
+      display: flex;
+
+      // Меняем местами картинку и надпись 2-го преимущества
+
+      &:nth-child(4) {
+        & .feature {
+          order: 1;
+        }
+      }
+    }
+
+    &__row--left {
+      padding-bottom: 61px;
+
+      // Меняем местами блок Еда и блок Сувениры
+
+      & .feature:nth-child(2) {
+        order: 2;
+      }
+    }
+
+    &__bg--gray {
+      padding-top: 41px;
+      padding-bottom: 41px;
+
+      // Обнуляем верхний отступ у преимуществ 3, 4, 5 на планшетной версии
+
+      & .feature {
+        padding-top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  @media #{$desktop-width} {
+    &__header {
+      margin-right: 357px;
+      margin-left: 357px;
+    }
+
+    &__row--left {
+      padding-bottom: 50px;
+    }
+
+    &__bg--gray {
+      padding-bottom: 65px;
     }
   }
 }
