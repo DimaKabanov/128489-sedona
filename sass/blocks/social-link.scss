@@ -1,7 +1,12 @@
 .social-link {
+  padding-top: 17px;
+  padding-left: 15px;
+  padding-right: 13px;
+  padding-bottom: 15px;
   margin-right: 6px;
   width: 46px;
   height: 48px;
+  box-sizing: border-box;
 
   font-size: 0;
 
@@ -9,5 +14,26 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  &--fb {
+    padding-left: 19px;
+    padding-top: 14px;
+  }
+
+  &--yt {
+    padding-left: 13px;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    & > svg {
+      fill: #88b6d1;
+    }
   }
 }

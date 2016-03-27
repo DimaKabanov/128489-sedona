@@ -1,9 +1,13 @@
 .logo {
-  width: 102px;
-  height: 83px;
-  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 
-  outline: 1px solid red;
+  text-align: center;
+
+  &__picture {
+    width: 103px;
+    height: 82px;
+  }
 
   @media #{$tablet-width} {
     position: absolute;
@@ -14,7 +18,9 @@
   }
 
   @media #{$desktop-width} {
-    width: 188px;
-    height: 96px;
+    &__picture {
+      width: 188px;
+      height: auto;
+    }
   }
 }

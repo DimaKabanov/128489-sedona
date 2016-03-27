@@ -41,13 +41,15 @@
 
   &__toggle {
     position: absolute;
-    bottom: 45px;
+    bottom: 50px;
     right: 20px;
 
     width: 23px;
     height: 21px;
 
     font-size: 0;
+    border: none;
+    background-color: #ffffff;
   }
 
   &__toggle--opened {
