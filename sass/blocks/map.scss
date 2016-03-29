@@ -3,8 +3,15 @@
   height: 350px;
 
   background-image: url("../img/bg-map-mobile.jpg");
+  background-repeat: no-repeat;
 
   @media #{$tablet-width} {
     margin-bottom: 0;
+
+    background-image: url("../img/bg-map-tablet.jpg");
+  }
+
+  @media #{$desktop-width} {
+    background-image: url("../img/bg-map-desktop.jpg");
   }
 }
