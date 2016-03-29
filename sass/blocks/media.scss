@@ -23,10 +23,15 @@
     border-top: 1px solid #e5e5e5;
   }
 
+  &__like {
+    margin-left: 20px;
+  }
+
   &__like-number {
-    margin-left: 57px;
+    margin-left: 13px;
 
     line-height: $line-height-big;
+    vertical-align: top;
   }
 
   &__video {

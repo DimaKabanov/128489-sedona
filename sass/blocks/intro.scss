@@ -9,18 +9,70 @@
   margin-top: -28px;
   overflow: hidden;
 
+  &__text {
+    margin-top: 90px;
+    width: 282px;
+    height: 214px;
+  }
+
+  &__triangle-mobile {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__triangle-tablet {
+    display: none;
+  }
+
+  &__triangle-desktop {
+    display: none;
+  }
+
   @media (min-resolution: 1.5dppx) {
     background: url("../img/bg-back-mobile@2x.jpg");
     background-position: center;
     background-size: cover;
   }
 
-  &__picture {
-
-  }
-
   @media #{$tablet-width} {
     height: 518px;
     margin-top: 0;
+
+    &__text {
+      margin-top: 77px;
+      width: 461px;
+      height: 350px;
+    }
+
+    &__triangle-mobile {
+      display: none;
+    }
+
+    &__triangle-tablet {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+    }
+
+    &__triangle-desktop {
+      display: none;
+    }
+  }
+
+  @media #{$desktop-width} {
+    &__triangle-tablet {
+      display: none;
+    }
+
+    &__triangle-desktop {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+    }
   }
 }

@@ -57,6 +57,10 @@
     margin-left: 120px;
   }
 
+  &__views-ullscreen {
+    margin-right: 10px;
+  }
+
   @media #{$tablet-width} {
     position: relative;
     bottom: 0;
@@ -68,22 +72,28 @@
     margin-left: -324px;
 
     &__time {
-      position: relative;
+      position: absolute;
       left: 94px;
-      bottom: 10px;
+      bottom: 23px;
 
-      padding-top: 0;
-      width: 389px;
+      padding: 0;
+      width: 382px;
 
       background-color: rgba(0, 0, 0, 0);
     }
 
     &--toggle {
-      top: 0;
+      top: -3px;
     }
 
     &__views {
+      height: 92px;
+
       background-color: rgba(0, 0, 0, 0.6);
     }
+  }
+
+  @media #{$desktop-width} {
+    margin-left: -400px;
   }
 }
