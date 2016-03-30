@@ -30,6 +30,12 @@
 
     background-color: #f2f2f2;
     border: none;
+
+    @media #{$tablet-width} {
+      background-color: rgba(0, 0, 0, 0);
+      border: none;
+      margin-right: 30px;
+    }
   }
 
   &--submit {
@@ -54,14 +60,6 @@
 
     @media #{$desktop-width} {
       padding: 16px 147px 16px;
-    }
-  }
-
-  @media #{$tablet-width} {
-    &--restart {
-
-      border: none;
-      margin-right: 40px;
     }
   }
 }

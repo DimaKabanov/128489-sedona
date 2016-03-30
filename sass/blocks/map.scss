@@ -6,7 +6,7 @@
   background-repeat: no-repeat;
 
   @media #{$tablet-width} {
-    margin-bottom: 0;
+    margin-bottom: 36px;
 
     background-image: url("../img/bg-map-tablet.jpg");
   }

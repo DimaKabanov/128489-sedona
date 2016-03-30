@@ -48,6 +48,10 @@
     //padding-top: 0;
     width: 256px;
 
+    &__bg--blue {
+      height: 216px;
+    }
+
     &__title {
       margin-left: 63px;
       margin-right: 63px;
@@ -67,6 +71,10 @@
   @media #{$desktop-width} {
     padding-top: 50px;
     width: 400px;
+
+    &__bg--blue {
+      height: 206px;
+    }
 
     &__title {
       margin-left: 135px;

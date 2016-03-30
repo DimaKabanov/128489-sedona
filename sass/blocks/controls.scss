@@ -57,9 +57,10 @@
     margin-left: 120px;
   }
 
-  &__views-ullscreen {
+  &__views-fullscreen {
     margin-right: 10px;
   }
+
 
   @media #{$tablet-width} {
     position: relative;
@@ -90,10 +91,27 @@
       height: 92px;
 
       background-color: rgba(0, 0, 0, 0.6);
+
+      & svg {
+        fill: #ffffff
+      }
+    }
+
+    &__views-subtitles {
+      margin-left: 400px;
     }
   }
 
+
   @media #{$desktop-width} {
     margin-left: -400px;
+
+    &__time {
+      width: 540px;
+    }
+
+    &__views-subtitles {
+      margin-left: 550px;
+    }
   }
 }

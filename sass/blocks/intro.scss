@@ -9,10 +9,20 @@
   margin-top: -28px;
   overflow: hidden;
 
+  &--short {
+    height: 158px;
+  }
+
   &__text {
     margin-top: 90px;
     width: 282px;
     height: 214px;
+  }
+
+  &__text-small {
+    margin-top: 52px;
+    width: 227px;
+    height: 38px;
   }
 
   &__triangle-mobile {
@@ -39,10 +49,20 @@
     height: 518px;
     margin-top: 0;
 
+    &--short {
+      height: 290px;
+    }
+
     &__text {
       margin-top: 77px;
       width: 461px;
       height: 350px;
+    }
+
+    &__text-small {
+      margin-top: 95px;
+      width: 457px;
+      height: 75px;
     }
 
     &__triangle-mobile {
@@ -63,6 +83,10 @@
   }
 
   @media #{$desktop-width} {
+    &--short {
+      height: 301px;
+    }
+
     &__triangle-tablet {
       display: none;
     }

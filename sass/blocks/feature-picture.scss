@@ -5,19 +5,12 @@
   overflow: hidden;
 
   &__img {
-    //width: 320px;
-    //height: 260px;
-    //height: 260px;
-    //transform: translateX(-20%);
+    width: 400px;
+    height: 260px;
   }
 
   @media #{$tablet-width} {
-    //width: 2/3*100%;
     height: 256px;
-    //float: right;
-    //margin: 0;
-    //width: 512px;
-    //height: 256px;
 
     &__img {
       width: 512px;
@@ -31,7 +24,7 @@
     &__img {
       width: 800px;
       height: auto;
-      //height: 260px;
+
       transform: translateY(-15%);
     }
   }

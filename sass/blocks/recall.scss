@@ -129,6 +129,21 @@
       background-color: #e6e6e6;
     }
 
+    & label[for="phone"]::after {
+      content: "";
+
+      position: absolute;
+      top: 50px;
+      right: 15px;
+
+      display: block;
+      width: 23px;
+      height: 16px;
+
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+    }
+
     & label[for="email"]::before {
       content: "";
 
@@ -142,6 +157,21 @@
       height: 58px;
 
       background-color: #e6e6e6;
+    }
+
+    & label[for="email"]::after {
+      content: "";
+
+      position: absolute;
+      top: 50px;
+      right: 15px;
+
+      display: block;
+      width: 23px;
+      height: 16px;
+
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
     }
   }
 
@@ -181,6 +211,14 @@
       background-color: #f2f2f2;
     }
 
+    & input[type="radio"] + label:hover::before {
+      background-color: #e5e5e5;
+    }
+
+    & input[type="radio"] + label:active::before {
+      background-color: #d5d5d5;
+    }
+
     & input[type="radio"]:checked + label::after {
       content: "";
 
@@ -194,6 +232,10 @@
 
       border-radius: 50%;
       background-color: #333333;
+    }
+
+    & input[type="radio"]:checked + label:active::after {
+      background-color: #a4a4a4;
     }
   }
 
@@ -231,6 +273,29 @@
 
       border-radius: 5px;
       background-color: #f2f2f2;
+    }
+
+    & input[type="checkbox"] + label:hover::before {
+      background-color: #e5e5e5;
+    }
+
+    & input[type="checkbox"] + label:active::before {
+      background-color: #d5d5d5;
+    }
+
+    & input[type="checkbox"]:checked + label::after {
+      content: "";
+
+      position: absolute;
+      top: 20px;
+      left: 17px;
+
+      display: block;
+      width: 23px;
+      height: 16px;
+
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
     }
   }
 
@@ -427,6 +492,11 @@
       &:last-child {
         padding-right: 0;
       }
+    }
+
+    & label[for="phone"]::after,
+      label[for="email"]::after {
+      top: 21px;
     }
   }
 }
