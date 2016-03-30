@@ -51,6 +51,14 @@
     & svg {
       vertical-align: middle;
     }
+
+    & svg:hover {
+      fill: #333333;
+    }
+
+    & svg:active {
+      fill: #c1c1c1;
+    }
   }
 
   &__views-subtitles {

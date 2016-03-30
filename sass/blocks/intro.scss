@@ -39,7 +39,8 @@
     display: none;
   }
 
-  @media (min-resolution: 1.5dppx) {
+  @media (min-resolution: 144dpi),
+         (min-resolution: 1.5dppx) {
     background: url("../img/bg-back-mobile@2x.jpg");
     background-position: center;
     background-size: cover;
