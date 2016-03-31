@@ -3,6 +3,10 @@ body {
   line-height: $line-height-base;
   font-family: $font-base;
   text-transform: uppercase;
+
+  @media #{$desktop-width} {
+    background-color: #f2f2f2;
+  }
 }
 
 .clearfix {
@@ -13,11 +17,6 @@ body {
     clear: both;
   }
 }
-
-//img {
-//  max-width: 100%;
-//  vertical-align: top;
-//}
 
 ::-webkit-input-placeholder {
   font-weight: bold;
