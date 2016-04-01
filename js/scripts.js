@@ -1,19 +1,19 @@
 //Menu
 (function () {
-  var hamburger = document.querySelector('.main-nav__toggle');
+  var burger = document.querySelector('.main-nav__toggle');
   var close = document.querySelector('.main-nav--close');
   var menu = document.querySelector('.main-nav');
 
-  hamburger.addEventListener('click', function() {
+  burger.addEventListener('click', function() {
     event.preventDefault();
     menu.classList.toggle('main-nav--open');
-    hamburger.classList.toggle('main-nav__toggle--opened')
+    burger.classList.toggle('main-nav__toggle--opened')
   });
 
   close.addEventListener('click', function() {
     event.preventDefault();
     menu.classList.remove('main-nav--open');
-    hamburger.classList.remove('main-nav__toggle--opened')
+    burger.classList.remove('main-nav__toggle--opened')
   })
 })();
 
