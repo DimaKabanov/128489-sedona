@@ -24,13 +24,24 @@
     line-height: $line-height-bigger;
   }
 
+  &__copyright-link:hover {
+    & > svg {
+      fill: #81b3d2;
+    }
+  }
+
+  &__copyright-link:active {
+    & > svg {
+      fill: #b2b2b2;
+    }
+  }
+
 
   @media #{$tablet-width} {
     flex-direction: row;
     justify-content: space-between;
     margin-left: 60px;
     margin-right: 60px;
-    padding-top: 35px;
     padding-bottom: 35px;
 
     &__hashtag {

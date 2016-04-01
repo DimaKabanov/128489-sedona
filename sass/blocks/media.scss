@@ -20,13 +20,18 @@
     padding-top: 23px;
     padding-bottom: 20px;
 
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid $gray-light;
+  }
+
+  &__like {
+    margin-left: 20px;
   }
 
   &__like-number {
-    margin-left: 57px;
+    margin-left: 13px;
 
     line-height: $line-height-big;
+    vertical-align: top;
   }
 
   &__video {
@@ -34,7 +39,7 @@
 
     text-align: center;
 
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid $gray-light;
     }
 
   &__video-title {
@@ -55,6 +60,13 @@
     height: 201px;
 
     background-image: url("../img/video-mobile.jpg");
+
+    @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/video-mobile@2x.jpg");
+        background-size: cover;
+    }
   }
 
 
@@ -64,6 +76,7 @@
 
     margin-left: 60px;
     margin-right: 60px;
+    margin-bottom: 75px;
 
     &__header {
       padding: 50px 0;
@@ -118,12 +131,23 @@
 
       display: flex;
       height: 500px;
+
+      background-image: url("../img/video-tablet.jpg");
+
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/video-tablet@2x.jpg");
+        background-size: cover;
+      }
     }
   }
 
 
   @media #{$desktop-width} {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 120px;
 
     &__header {
       padding-top: 105px;
@@ -148,6 +172,17 @@
     &__video-description {
       margin-left: 190px;
       margin-right: 190px;
+    }
+
+    &__video-content {
+      background-image: url("../img/video-desktop.jpg");
+
+      @media
+      (min-resolution: 144dpi),
+      (min-resolution: 1.5dppx) {
+        background-image: url("../img/video-desktop@2x.jpg");
+        background-size: cover;
+      }
     }
   }
 }

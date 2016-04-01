@@ -1,11 +1,103 @@
 .intro {
+  position: relative;
+  text-align: center;
+  background: url("../img/bg-back-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+
   height: 389px;
   margin-top: -28px;
+  overflow: hidden;
 
-  //outline: 1px solid green;
+  &--short {
+    height: 158px;
+  }
+
+  &__text {
+    margin-top: 90px;
+    width: 282px;
+    height: 214px;
+  }
+
+  &__text-small {
+    margin-top: 52px;
+    width: 227px;
+    height: 38px;
+  }
+
+  &__triangle-mobile {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  &__triangle-tablet {
+    display: none;
+  }
+
+  &__triangle-desktop {
+    display: none;
+  }
+
+  @media (min-resolution: 144dpi),
+         (min-resolution: 1.5dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg");
+    background-position: center;
+    background-size: cover;
+  }
 
   @media #{$tablet-width} {
     height: 518px;
     margin-top: 0;
+
+    &--short {
+      height: 290px;
+    }
+
+    &__text {
+      margin-top: 77px;
+      width: 461px;
+      height: 350px;
+    }
+
+    &__text-small {
+      margin-top: 95px;
+      width: 457px;
+      height: 75px;
+    }
+
+    &__triangle-mobile {
+      display: none;
+    }
+
+    &__triangle-tablet {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+    }
+
+    &__triangle-desktop {
+      display: none;
+    }
+  }
+
+  @media #{$desktop-width} {
+    &--short {
+      height: 301px;
+    }
+
+    &__triangle-tablet {
+      display: none;
+    }
+
+    &__triangle-desktop {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+
+      display: block;
+    }
   }
 }

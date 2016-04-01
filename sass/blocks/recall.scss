@@ -17,7 +17,7 @@
     padding-top: 20px;
     padding-bottom: 25px;
 
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid $gray-light;
   }
 
   &__form-content {
@@ -60,19 +60,19 @@
       padding: 20px;
 
       border: none;
-      background-color: #f2f2f2;
+      background-color: $gray-very-light;
 
       outline: none;
 
       &:hover {
-        background-color: #e5e5e5;
+        background-color: $gray-light;
       }
 
       &:focus {
         padding: 16px;
 
         background-color: #ffffff;
-        border: 4px solid #e5e5e5;
+        border: 4px solid $gray-light;
       }
     }
   }
@@ -100,17 +100,17 @@
       border: none;
       outline: none;
 
-      background-color: #f2f2f2;
+      background-color: $gray-very-light;
 
       &:hover {
-        background-color: #e5e5e5;
+        background-color: $gray-light;
       }
 
       &:focus {
         padding: 16px;
 
         background-color: #ffffff;
-        border: 4px solid #e5e5e5;
+        border: 4px solid $gray-light;
       }
     }
 
@@ -129,6 +129,21 @@
       background-color: #e6e6e6;
     }
 
+    & label[for="phone"]::after {
+      content: "";
+
+      position: absolute;
+      top: 50px;
+      right: 15px;
+
+      display: block;
+      width: 23px;
+      height: 16px;
+
+      background-image: url("../img/icon-phone.svg");
+      background-repeat: no-repeat;
+    }
+
     & label[for="email"]::before {
       content: "";
 
@@ -142,6 +157,21 @@
       height: 58px;
 
       background-color: #e6e6e6;
+    }
+
+    & label[for="email"]::after {
+      content: "";
+
+      position: absolute;
+      top: 50px;
+      right: 15px;
+
+      display: block;
+      width: 23px;
+      height: 16px;
+
+      background-image: url("../img/icon-mail.svg");
+      background-repeat: no-repeat;
     }
   }
 
@@ -178,7 +208,16 @@
       height: 56px;
 
       border-radius: 50%;
-      background-color: #f2f2f2;
+      background-color: $gray-very-light;
+      cursor: pointer;
+    }
+
+    & input[type="radio"] + label:hover::before {
+      background-color: $gray-light;
+    }
+
+    & input[type="radio"] + label:active::before {
+      background-color: #d5d5d5;
     }
 
     & input[type="radio"]:checked + label::after {
@@ -194,6 +233,10 @@
 
       border-radius: 50%;
       background-color: #333333;
+    }
+
+    & input[type="radio"]:checked + label:active::after {
+      background-color: #a4a4a4;
     }
   }
 
@@ -230,7 +273,31 @@
       height: 56px;
 
       border-radius: 5px;
-      background-color: #f2f2f2;
+      background-color: $gray-very-light;
+      cursor: pointer;
+    }
+
+    & input[type="checkbox"] + label:hover::before {
+      background-color: $gray-light;
+    }
+
+    & input[type="checkbox"] + label:active::before {
+      background-color: #d5d5d5;
+    }
+
+    & input[type="checkbox"]:checked + label::after {
+      content: "";
+
+      position: absolute;
+      top: 20px;
+      left: 17px;
+
+      display: block;
+      width: 23px;
+      height: 16px;
+
+      background-image: url("../img/icon-tick.svg");
+      background-repeat: no-repeat;
     }
   }
 
@@ -241,21 +308,25 @@
     min-height: 160px;
     box-sizing: border-box;
 
-    background-color: #f2f2f2;
+    background-color: $gray-very-light;
     border: none;
     outline: none;
     resize: none;
 
     &:hover {
-      background-color: #e5e5e5;
+      background-color: $gray-light;
     }
 
     &:focus {
       padding: 16px;
 
       background-color: #ffffff;
-      border: 4px solid #e5e5e5;
+      border: 4px solid $gray-light;
     }
+  }
+
+  &__form-required {
+    display: none;
   }
 
   @media #{$tablet-width} {
@@ -353,6 +424,20 @@
     &__form-row:nth-child(3) {
       order: -1;
     }
+
+    &__form-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__form-required {
+      display: block;
+    }
+
+    &__form-required-text {
+      line-height: $line-height-bigger;
+    }
   }
 
   @media #{$desktop-width} {
@@ -427,6 +512,11 @@
       &:last-child {
         padding-right: 0;
       }
+    }
+
+    & label[for="phone"]::after,
+      label[for="email"]::after {
+      top: 21px;
     }
   }
 }

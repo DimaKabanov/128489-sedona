@@ -1,10 +1,32 @@
 .main-nav {
   position: relative;
 
-  width: 320px;
-  min-height: 55px;
+  //width: 320px;
+  //min-height: 55px;
 
   text-align: center;
+
+  @media #{$mobile-width} {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+  }
+
+  &--close {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+
+    padding: 0;
+    width: 25px;
+    height: 25px;
+
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
 
   &__list {
     margin: 0;
@@ -42,29 +64,35 @@
   &__toggle {
     position: absolute;
     bottom: 45px;
-    right: 20px;
+    right: 17px;
+    z-index: 2;
 
-    width: 23px;
-    height: 21px;
+    width: 25px;
+    height: 25px;
+    padding: 0;
 
     font-size: 0;
+    border: none;
+    background-color: #ffffff;
+    outline: none;
   }
 
   &__toggle--opened {
-    top: 17px;
-  }
-
-
-  @media #{$mobile-width} {
-    &--closed {
-      display: none;
-    }
+    display: none;
   }
 
 
   @media #{$tablet-width} {
     width: auto;
     min-height: 55px;
+
+    &--opened {
+      display: none;
+    }
+
+    &--close {
+      display: none;
+    }
 
     &__list {
       font-size: 0;

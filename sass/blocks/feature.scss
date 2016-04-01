@@ -44,9 +44,27 @@
     padding-bottom: 25px;
   }
 
+  &--icon {
+    position: relative;
+  }
+
+  &__icon-img {
+    position: absolute;
+    left: -55px;
+    top: 0;
+
+    width: 40px;
+
+    fill: $blue-base;
+  }
+
   @media #{$tablet-width} {
     //padding-top: 0;
     width: 256px;
+
+    &__bg--blue {
+      height: 216px;
+    }
 
     &__title {
       margin-left: 63px;
@@ -62,15 +80,31 @@
 
       border-bottom: none;
     }
+
+    &__icon-img {
+      left: 50%;
+      top: 57px;
+      width: 72px;
+
+      transform: translateX(-50%);
+    }
   }
 
   @media #{$desktop-width} {
     padding-top: 50px;
     width: 400px;
 
+    &__bg--blue {
+      height: 206px;
+    }
+
     &__title {
       margin-left: 135px;
       margin-right: 135px;
+    }
+
+    &__text {
+      margin: 0 85px;
     }
   }
 }
