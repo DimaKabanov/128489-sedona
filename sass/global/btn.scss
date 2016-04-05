@@ -12,7 +12,7 @@
   border: none;
 
   &--search {
-    padding: 16px 46px 16px;
+    padding: 16px 35px 16px;
 
     &:hover {
       background-color: $blue-darker;
@@ -55,11 +55,11 @@
 
     @media #{$tablet-width} {
       margin: 0;
-      padding: 16px 75px 16px;
+      padding: 16px 72px 16px;
     }
 
     @media #{$desktop-width} {
-      padding: 16px 147px 16px;
+      padding: 16px 149px 16px;
     }
   }
 }

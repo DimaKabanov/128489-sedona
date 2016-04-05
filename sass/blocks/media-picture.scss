@@ -32,12 +32,15 @@
     &__description {
       padding-left: 20px;
 
-      background-color: $gray-base;
+      background-color: $gray-very-light;
+    }
+
+    &__description--bg-dark {
+      background-color: #eaeaea;
     }
 
     &__img {
       width: 324px;
-      //height: auto;
     }
 
     &__img--big {
@@ -49,7 +52,6 @@
   @media #{$desktop-width} {
     &__img {
       width: 400px;
-      //height: 267px;
     }
 
     &__img--big {
