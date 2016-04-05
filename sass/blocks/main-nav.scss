@@ -8,10 +8,10 @@
 
   @media #{$mobile-width} {
     display: none;
-  }
 
-  &--open {
-    display: block;
+    &--open {
+      display: block;
+    }
   }
 
   &--close {

@@ -52,12 +52,13 @@
     }
 
     & label {
-      margin-right: 20px;
+      line-height: 26px;
     }
 
     & input {
       width: 100%;
       padding: 20px;
+      margin-left: 20px;
 
       border: none;
       background-color: $gray-very-light;
@@ -88,6 +89,8 @@
 
     & label {
       margin-left: 20px;
+
+      line-height: $line-height-bigger;
     }
 
     & input {
@@ -133,7 +136,7 @@
       content: "";
 
       position: absolute;
-      top: 50px;
+      top: 55px;
       right: 15px;
 
       display: block;
@@ -163,7 +166,7 @@
       content: "";
 
       position: absolute;
-      top: 50px;
+      top: 55px;
       right: 15px;
 
       display: block;
@@ -187,7 +190,7 @@
 
       display: block;
       margin-bottom: 20px;
-      padding-left: 80px;
+      padding-left: 70px;
 
       font-size: $font-size-big;
       line-height: 56px;
@@ -332,6 +335,7 @@
   @media #{$tablet-width} {
     margin-left: 60px;
     margin-right: 60px;
+    margin-bottom: 95px;
 
     &__header {
       padding: 50px 0;
@@ -358,6 +362,12 @@
 
     &__form-content {
       margin: 0;
+    }
+
+    &__content-title {
+      font-size: $font-size-bigger;
+
+      margin-bottom: 40px;
     }
 
     // Прячем слово - пожалуйста
@@ -503,7 +513,7 @@
     }
 
     &__item-attraction {
-      padding-right: 37px;
+      padding-right: 31px;
 
       & input[type="checkbox"] + label {
         padding-left: 75px;
