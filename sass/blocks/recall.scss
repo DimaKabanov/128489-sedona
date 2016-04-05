@@ -52,14 +52,13 @@
     }
 
     & label {
-      margin-right: 20px;
-
       line-height: 26px;
     }
 
     & input {
       width: 100%;
       padding: 20px;
+      margin-left: 20px;
 
       border: none;
       background-color: $gray-very-light;
@@ -514,7 +513,7 @@
     }
 
     &__item-attraction {
-      padding-right: 37px;
+      padding-right: 31px;
 
       & input[type="checkbox"] + label {
         padding-left: 75px;
