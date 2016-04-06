@@ -348,6 +348,10 @@
       line-height: $line-height-biggest;
     }
 
+    &__form {
+      position: relative;
+    }
+
     &__form--flexbox {
       display: flex;
       flex-wrap: wrap;
@@ -447,6 +451,82 @@
 
     &__form-required-text {
       line-height: $line-height-bigger;
+    }
+
+    // failure pop-up
+
+    &__form-failure {
+      position: absolute;
+      bottom: 250px;
+      left: 50%;
+      z-index: 2;
+
+      display: none;
+      width: 400px;
+      padding-top: 60px;
+      padding-bottom: 49px;
+      margin-left: -200px;
+
+      background-color: #ffffff;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    }
+
+    &__form-failure-title {
+      margin-left: 80px;
+      margin-right: 80px;
+      margin-bottom: 30px;
+
+      font-size: $font-size-biggest;
+      line-height: $line-height-biggest;
+    }
+
+    &__form-failure-text {
+      line-height: $line-height-big;
+
+      margin-bottom: 35px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    // succes pop-up
+
+    &__form-succes {
+      position: absolute;
+      bottom: 250px;
+      left: 50%;
+      z-index: 2;
+
+      display: block;
+      width: 640px;
+      padding-top: 60px;
+      //padding-bottom: 49px;
+      margin-left: -320px;
+
+      background-color: #ffffff;
+      text-align: center;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    }
+
+    &__form-succes-title {
+      //margin-left: 80px;
+      //margin-right: 80px;
+      margin-bottom: 30px;
+
+      font-size: $font-size-biggest;
+      line-height: $line-height-biggest;
+    }
+
+    &__form-succes-text {
+      line-height: $line-height-big;
+
+      margin-bottom: 35px;
+      margin-left: 110px;
+      margin-right: 110px;
+    }
+
+    &__form-succes-btn {
+      background-color: $gray-very-light;
     }
   }
 
