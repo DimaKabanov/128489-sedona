@@ -451,6 +451,9 @@
   }
 
   @media #{$desktop-width} {
+    margin-left: 0;
+    margin-right: 0;
+
     &__form {
       margin-left: 120px;
       margin-right: 120px;
@@ -470,11 +473,11 @@
     // Линия слева от блока ФИО
 
     &__form-content--line {
-      padding-left: 70px;
+      padding-left: 85px;
     }
 
     &__item-name {
-      width: 350px;
+      width: 400px;
     }
 
     &__contacts-group {
@@ -490,7 +493,7 @@
 
       & input {
         margin: 0;
-        width: 270px;
+        width: 315px;
       }
 
       & label[for="email"]::before {
@@ -509,14 +512,14 @@
     }
 
     &__checkbox--flexbox:first-child {
-      padding-right: 37px;
+      padding-right: 70px;
     }
 
     &__item-attraction {
-      padding-right: 31px;
+      padding-right: 70px;
 
       & input[type="checkbox"] + label {
-        padding-left: 75px;
+        padding-left: 82px;
       }
 
       &:last-child {
