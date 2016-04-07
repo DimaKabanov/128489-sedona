@@ -1,7 +1,7 @@
 .feature {
   padding-top: 25px;
 
-  &__bg--blue {
+  &--blue-bg {
     padding-top: 40px;
 
     background-color: $blue-base;
@@ -74,10 +74,9 @@
   }
 
   @media #{$tablet-width} {
-    //padding-top: 0;
     width: 256px;
 
-    &__bg--blue {
+    &--blue-bg {
       min-height: 216px;
     }
 
@@ -124,7 +123,7 @@
     padding-top: 50px;
     width: 400px;
 
-    &__bg--blue {
+    &--blue-bg {
       min-height: 206px;
     }
 

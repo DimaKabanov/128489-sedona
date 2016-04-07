@@ -373,7 +373,7 @@
       position: relative;
     }
 
-    &__form--flexbox {
+    &__form-flexbox {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -453,7 +453,7 @@
       box-sizing: border-box;
     }
 
-    &__checkbox--flexbox {
+    &__checkbox-flexbox {
       display: flex;
       flex-wrap: wrap;
     }
@@ -647,7 +647,7 @@
 
     // Убираем слово - контактный
 
-    &__item-contacts--none {
+    &__item-contacts-none {
       display: none;
     }
 
@@ -655,7 +655,7 @@
       padding-left: 0;
     }
 
-    &__checkbox--flexbox:first-child {
+    &__checkbox-flexbox:first-child {
       padding-right: 60px;
     }
 

@@ -13,7 +13,7 @@
     @include base-description;
   }
 
-  &__bg--gray {
+  &--gray-bg {
     background-color: $gray-base;
 
     // Линии снизу у преимуществ 3 и 4
@@ -99,7 +99,7 @@
       }
     }
 
-    &__bg--gray {
+    &--gray-bg {
       padding-top: 41px;
       padding-bottom: 41px;
 
@@ -123,7 +123,7 @@
       padding-bottom: 50px;
     }
 
-    &__bg--gray {
+    &--gray-bg {
       padding-bottom: 65px;
 
       & .feature__text {
