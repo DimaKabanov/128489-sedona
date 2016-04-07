@@ -23,7 +23,7 @@
     background-color: rgba(255, 255, 255, 0.2);
   }
 
-  &--toggle {
+  &__toggle {
     position: absolute;
     top: 18px;
     left: 65px;
@@ -91,7 +91,7 @@
       background-color: rgba(0, 0, 0, 0);
     }
 
-    &--toggle {
+    &__toggle {
       top: -3px;
     }
 

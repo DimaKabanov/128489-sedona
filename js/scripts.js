@@ -1,8 +1,13 @@
 //Menu
 (function () {
+  var nojs = document.querySelector(".no-js");
   var burger = document.querySelector('.main-nav__toggle');
-  var close = document.querySelector('.main-nav--close');
+  var close = document.querySelector('.main-nav__close');
   var menu = document.querySelector('.main-nav');
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    nojs.classList.remove("no-js");
+  });
 
   burger.addEventListener('click', function() {
     event.preventDefault();

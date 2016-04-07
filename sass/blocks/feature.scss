@@ -1,7 +1,7 @@
 .feature {
   padding-top: 25px;
 
-  &__bg--blue {
+  &--blue-bg {
     padding-top: 40px;
 
     background-color: $blue-base;
@@ -50,20 +50,34 @@
 
   &__icon-img {
     position: absolute;
-    left: -55px;
-    top: 0;
+    right: 262px;
+    top: 15px;
 
     width: 40px;
 
     fill: $blue-base;
   }
 
+  &__icon-img--home {
+    height: 37px;
+  }
+
+  &__icon-img--souvenirs {
+    width: 32px;
+    height: 38px;
+  }
+
+  &__icon-img--food {
+    top: 18px;
+
+    height: 35px;
+  }
+
   @media #{$tablet-width} {
-    //padding-top: 0;
     width: 256px;
 
-    &__bg--blue {
-      height: 216px;
+    &--blue-bg {
+      min-height: 216px;
     }
 
     &__title {
@@ -88,14 +102,29 @@
 
       transform: translateX(-50%);
     }
+
+    &__icon-img--home {
+      width: 75px;
+      height: 72px;
+    }
+
+    &__icon-img--souvenirs {
+      width: 64px;
+      height: 75px;
+    }
+
+    &__icon-img--food {
+      width: 77px;
+      height: 68px;
+    }
   }
 
   @media #{$desktop-width} {
     padding-top: 50px;
     width: 400px;
 
-    &__bg--blue {
-      height: 206px;
+    &--blue-bg {
+      min-height: 206px;
     }
 
     &__title {

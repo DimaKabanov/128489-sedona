@@ -62,4 +62,36 @@
       padding: 16px 149px 16px;
     }
   }
+
+  &--failure {
+    padding: 16px 124px;
+    margin: 0 auto;
+
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $blue-darker;
+    }
+
+    &:active {
+      background-color: $blue-darkest;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  &--succes {
+    padding: 16px 155px;
+    margin: 0 auto;
+
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $blue-darker;
+    }
+
+    &:active {
+      background-color: $blue-darkest;
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
 }
